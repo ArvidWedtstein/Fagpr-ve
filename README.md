@@ -51,7 +51,6 @@ Lager presentasjon.
           - Brukeren kan lage custom items vis varen ikke eksisterer i varelisten. Disse custom varene blir da lagt til i items tabellen med referanse til brukeren som laget denne custom varen
           - Søkemulighet for å la brukeren søke i handelister
       
-      
 </details>
 
 <details>
