@@ -45,7 +45,7 @@ Lager presentasjon.
 
 ## Skisse av løsningen:
 
-[Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1)
+Grov [Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1) av tenkt layout
 <details>
     <summary>Hoved Bilde (collapse for å se detaljer)</summary>
 
