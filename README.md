@@ -17,7 +17,7 @@ Forslaget er da som følger:
 
 ## Fremgangsmåte:
 Begynner med å planlegge og lage tabellstruktur for å ha oversikt over målet.
-Lager deretter tabellene og appene (hovedside, details og registrering) (mobile first)
+Lager deretter tabellene og appene (hovedside og details) (mobile first)
 Legger til planlagt funksjonalitet (se Skisse av løsningen).
 Registrering og pålogging løses i appframe (NT) rammeverket da dette eksisterer her fra før.
 Legger eventuelt til bonusfunksjonalitet, avhengig av tid til overs.
