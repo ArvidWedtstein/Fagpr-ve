@@ -15,6 +15,11 @@ Forslaget er da som følger:
 - Bootstrap
 - Figma for skissing av layout
 
+## Eventuelle informasjonskilder:
+1. [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+2. [Stackoverflow](https://stackoverflow.com/)
+3. Omega Ansatte
+
 ## Fremgangsmåte:
 Begynner med å planlegge og lage tabellstruktur for å ha oversikt over målet.
 Lager deretter tabellene og appene (hovedside og details) (mobile first)
@@ -37,9 +42,6 @@ Lager presentasjon.
 - Teste funksjonalitet, dokumentere testresultat
 - Lage presentasjon
 
-## Eventuelle informasjonskilder:
-1. [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-2. [Stackoverflow](https://stackoverflow.com/)
 
 ## Skisse av løsningen:
 
