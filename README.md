@@ -122,6 +122,8 @@ Tabeller: [Tabellstruktur](https://drawsql.app/teams/arvid/diagrams/tabellstrukt
 - Dokumentere dagens aktivteter og systemdokumentasjon (0.5t)
 - Lage plan for testing, tester løsningen og dokumentere resultat (4t)
 - Finjustere eventuelle mangler og feil etter test (2t)
+- Begynne på dokumentasjon (1t)
+  
 </details>
 
 <details>
