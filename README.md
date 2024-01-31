@@ -1,6 +1,6 @@
 # Fagprøve
 Forslaget er da som følger:
-- 49,5 arbeidstimer for en handleliste app med følgende mål:
+- 49,5 arbeidstimer for en handleliste app i Appframe 365 rammeverket med følgende mål:
 
 ## Målet med oppgaven:
 1. Lage en handeliste app med registrering og innlogging for brukere.
@@ -8,13 +8,12 @@ Forslaget er da som følger:
 3. Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
 
 ## Utstyr
-- Laptop / PC
-- Omega 365 Appframe rammeverket / Vue.js
-- Internett
+- Omega 365 NT rammeverket / Vue.js fordi dette har brukerregistrering/innlogging integrert og er lett å komme igang med.
 - DrawSQL for å tegne Tabellstruktur
 - Fontawesome library for ikoner.
-- SQL Server Management Studio for redigering/oppretting av tabeller og views.
-- Bootstrap 
+- SQL Server Management Studio/db-manager for redigering/oppretting av tabeller og views.
+- Bootstrap
+- Figma for skissing av layout
 
 ## Fremgangsmåte:
 Begynner med å planlegge og lage tabellstruktur for å ha oversikt over målet.
@@ -49,7 +48,7 @@ Lager presentasjon.
     - Footer med mulighet for å lage ny handleliste
     - "3 dotter" meny på hver handeliste som gir mulighet til å redigere listens navn eller slette den.
     - BONUS:
-          - Brukeren kan dele sine handlelister med andre i samme dialogen til "3 dotter" menyen.
+          - Brukeren kan dele sine handlelister med andre i samme dialogen til "3 dotter" menyen. Dette gjøres via en lookup for å legge til personen en ønsker å dele med. I samme dialog som handlelisten redigeres på vil da også delte folk kunne slettes/legges til.
           - Søkemulighet for å la brukeren søke i handelister
       
 </details>
