@@ -45,7 +45,6 @@ Lager presentasjon.
 
 ## Skisse av løsningen:
 
-Grov [Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1) av tenkt layout
 <details>
     <summary>Hoved Bilde (collapse for å se detaljer)</summary>
 
@@ -77,9 +76,12 @@ Grov [Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handlelist
 
 </details>
 
-Innlogging og registrering løses i appframe rammeverket.
+Grov [Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1) av tenkt layout
 
 Tabeller: [Tabellstruktur](https://drawsql.app/teams/arvid/diagrams/tabellstruktur)
+
+
+Innlogging og registrering løses i appframe rammeverket.
 
 ## Tidsskjema:
 
