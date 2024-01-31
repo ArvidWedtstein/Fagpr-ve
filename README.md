@@ -32,6 +32,7 @@ Lager presentasjon.
 - Lage tabeller, views og stored procedures.
 - Inserte data i tabellene (tar meg friheten til å hente data og bilder for items fra mitt personlige prosjekt, ArkDashboard. Bildene her er lisensiert for non-commercial use, så i tilfelle dette hadde vært brukt til virkelig oppdrag, så hadde jeg gått for noe annet)
 - Sette opp trigger security. Brukeren skal kun få redigere sine egne handleliste og de brukeren har fått delt
+- Lage sider og dialoger
 - Dokumentere dette underveis
 - Lage brukerveiledning.
 - Teste funksjonalitet, dokumentere testresultat
@@ -46,10 +47,9 @@ Lager presentasjon.
 - Oversikt over brukerens handlelister
     - Oversikt over antall varer i hver liste.
     - Footer med mulighet for å lage ny handleliste
-    - "3 dotter" meny på hver handeliste som gir mulighet til å dele lister etter at de har blitt opprettet, og slette denne.
+    - "3 dotter" meny på hver handeliste som gir mulighet til å redigere listens navn eller slette den.
     - BONUS:
-          - Brukeren kan dele sine handlelister med andre.
-          - Brukeren kan lage custom items vis varen ikke eksisterer i varelisten. Disse custom varene blir da lagt til i items tabellen med referanse til brukeren som laget denne custom varen
+          - Brukeren kan dele sine handlelister med andre i samme dialogen til "3 dotter" menyen.
           - Søkemulighet for å la brukeren søke i handelister
       
 </details>
@@ -60,13 +60,14 @@ Lager presentasjon.
   - Oversikt over innholdet i handlelisten.
   - Liste med antall av varen
       - Edit knapp til høyre, som åpner dialog for redigering av vare, antall, unit og slette varen fra handlelisten
-          - BONUS: Autocomplete når brukeren skriver inn item, vis itemet ikke eksister i listen, så kan brukeren opprette item selv (også kalt FreeSolo autocomplete)
       - Click på item eller checkboxen, checker ut varen og markerer denne som "checked" / blir streket ut.
       - Sortert etter kategori for å gjøre handlingen enklere
       - Footer med oversikt over hvor mange varer som er igjen
       - BONUS:
         - Søkemulighet for varer i handlelisten.
         - Mulighet for å la brukeren bestemme hva som skal sorteres på
+        - Brukeren kan lage custom items vis varen ikke eksisterer i varelisten. Disse custom varene blir da lagt til i items tabellen med referanse til brukeren som laget denne custom varen
+        - Autocomplete når brukeren skriver inn item i dialogen, vis itemet ikke eksister i listen, så kan brukeren opprette item selv (også kalt FreeSolo autocomplete)
 
 </details>
 
