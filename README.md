@@ -37,6 +37,10 @@ Lager presentasjon.
 - Teste funksjonalitet, dokumentere testresultat
 - Lage presentasjon
 
+## Eventuelle informasjonskilder:
+1. [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+2. [Stackoverflow](https://stackoverflow.com/)
+
 ## Skisse av løsningen:
 
 [Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1)
