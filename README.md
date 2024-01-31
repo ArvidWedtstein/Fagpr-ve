@@ -12,11 +12,16 @@ Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
 - Internett
 - DrawSQL for å tegne Tabellstruktur
 - Fontawesome library for ikoner.
-- 
+- SQL Server Management Studio for redigering/oppretting av tabeller og views.
 
 ## Fremgangsmåte:
 Begynner med å planlegge og lage tabellstruktur.
 Lager deretter tabellene og appene (hovedside og details)
+Legger til planlagt funksjonalitet (se Skisse av løsningen) 
+Tester gjennom appen(e) og dokumenterer dette.
+Lager brukeranvisning.
+Dokumenterer hva jeg har gjort
+Lager presentasjon.
 
 ## Arbeidsoppgaver:
 
@@ -34,17 +39,18 @@ Main bilde
     - BONUS:
         - Brukeren kan dele sine handlelister med andre. Vis brukeren har delt listen sin med en annen bruker, skal denne også få opp listen hos seg samt customitems, og kan da avhengig av readonly kolonnen redigere denne.)
         - Search bar. Brukeren kan søke på handlelister
+        - "3 dotter" meny som gir mulighet til å dele lister etter at de har blitt opprettet, og slette denne.
 - Header med Knapp for ny handleliste, som da åpner dialog for å lage ny handleliste
 
 Detail bilde
 - Oversikt over innholdet i handlelisten.
-- Liste, checkbox til høyre, og antall av varen, inline redigering med lookup? 
+- Liste, checkbox til høyre, og antall av varen
+    - Edit knapp til høyre, som åpner dialog for redigering av vare, antall og unit.
     - Checked items sorteres øverst
     - Kategorisert etter kategori for å gjøre handlingen enklere
-    - Inline Lookup med items
+    - Inline Lookup redigering med items
         - BONUS: Autocomplete når brukeren skriver inn item, vis itemet ikke eksister i listen, så kan brukeren opprette item selv (også kalt FreeSolo autocomplete)
-- BONUS:
-    - Header med mulighet til å dele handlelisten
+
 
 
 ## Tidsskjema:
@@ -53,14 +59,18 @@ Detail bilde
 - Planlegging (4.5t)
 - Tabellstruktur (1t)
   
-### Torsdag: (8.5t)
+### Torsdag: (8.25t)
+- Dokumentere dagens aktivteter (0.25t)
 - Lage tabeller, inserte data (2t)
 - Lage sider
-    - Hoved (7.5t)
+    - Hoved (4.5t)
       - Dialog for ny liste (Bonus: Legge til mulighet for å dele denne med andre)
-      - Sette opp datasources, sortering,
-    - Details ()
-### Fredag:
+      - Sette opp datasources, sortering
+    - Details (1t)
+      - Sette opp datasources, sortering
+      
+### Fredag (8.5t):
+- Dokumentere dagens aktivteter (0.25t)
 - Change incomming
 
 ### Lørdag:
@@ -70,11 +80,11 @@ Detail bilde
 ### Mandag:
 
 ### Tirsdag:
-- Dokumentere
+- Dokumentere dagens aktivteter
 
 
 ### Onsdag:
-- Dokumentere
+- Dokumentere dagens aktivteter
 
 ### Torsdag:
 - Presentering
