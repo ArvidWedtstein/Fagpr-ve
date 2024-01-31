@@ -18,13 +18,13 @@ Forslaget er da som følger:
 
 ## Fremgangsmåte:
 Begynner med å planlegge og lage tabellstruktur for å ha oversikt over målet.
-Lager deretter tabellene og appene (hovedside og details)
+Lager deretter tabellene og appene (hovedside, details og registrering) (mobile first)
 Legger til planlagt funksjonalitet (se Skisse av løsningen).
 Registrering og pålogging løses i appframe (NT) rammeverket da dette eksisterer her fra før.
 Legger eventuelt til bonusfunksjonalitet, avhengig av tid til overs.
 Tester gjennom appen(e) og dokumenterer dette.
+Dokumenterer hva jeg har gjort.
 Lager brukeranvisning.
-Dokumenterer hva jeg har gjort
 Lager presentasjon.
 
 ## Arbeidsoppgaver:
@@ -39,6 +39,7 @@ Lager presentasjon.
 
 ## Skisse av løsningen:
 
+[Figma Skisse](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1)
 <details>
     <summary>Hoved Bilde (collapse for å se detaljer)</summary>
 
@@ -57,14 +58,15 @@ Lager presentasjon.
   <summary>Details Side</summary>
 
   - Oversikt over innholdet i handlelisten.
-  - Liste, checkbox for å checke ut, og antall av varen
-      - Edit knapp til høyre, som åpner dialog for redigering av vare, antall og unit
+  - Liste med antall av varen
+      - Edit knapp til høyre, som åpner dialog for redigering av vare, antall, unit og slette varen fra handlelisten
           - BONUS: Autocomplete når brukeren skriver inn item, vis itemet ikke eksister i listen, så kan brukeren opprette item selv (også kalt FreeSolo autocomplete)
-      - Click på item, checker ut varen og markerer denne som "checked"
-      - Kategorisert etter kategori for å gjøre handlingen enklere
+      - Click på item eller checkboxen, checker ut varen og markerer denne som "checked" / blir streket ut.
+      - Sortert etter kategori for å gjøre handlingen enklere
+      - Footer med oversikt over hvor mange varer som er igjen
       - BONUS:
         - Søkemulighet for varer i handlelisten.
-        - Footer med oversikt over hvor mange varer som er igjen
+        - Mulighet for å la brukeren bestemme hva som skal sorteres på
 
 </details>
 
