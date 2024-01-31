@@ -65,6 +65,7 @@ Lager presentasjon.
   - Oversikt over innholdet i handlelisten.
   - Liste med antall av varen
       - Edit knapp til høyre, som åpner dialog for redigering av vare, antall, unit og slette varen fra handlelisten
+            - Plus og minus knapp for kjapp redigering av antall
       - Click på item eller checkboxen, checker ut varen og markerer denne som "checked" / blir streket ut.
       - Sortert etter kategori for å gjøre handlingen enklere
       - Footer med oversikt over hvor mange varer som er igjen
