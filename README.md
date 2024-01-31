@@ -54,7 +54,7 @@ Lager presentasjon.
     - Footer med mulighet for å lage ny handleliste
     - "3 dotter" meny på hver handeliste som gir mulighet til å redigere listens navn eller slette den.
     - BONUS:
-          - Brukeren kan dele sine handlelister med andre i samme dialogen til "3 dotter" menyen. Dette gjøres via en lookup for å legge til personen en ønsker å dele med. I samme dialog som handlelisten redigeres på vil da også delte folk kunne slettes/legges til.
+          - Brukeren kan dele sine handlelister med andre i samme dialogen til "3 dotter" menyen. Dette gjøres via en grid for å legge til personen en ønsker å dele med lg vise/slette de som allerede har blitt delt med.
           - Søkemulighet for å la brukeren søke i handelister
       
 </details>
