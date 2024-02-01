@@ -20,3 +20,10 @@ Meny gir mulighet for å slette og redigere:
 "Shared With" viser hvem handlelisten har blitt delt med:
 
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3fe82d22-c7a0-49a8-aea9-76bc325bc5b8)
+
+Progress:
+
+Torsdag:
+Laget fremside, lagt til funksjonalitet for å søke, dele og redigere handlelister
+Laget views og Stored procedures og fikset trigger security.
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/78b5664b-766b-4d11-add8-0d4aba1846ad)
