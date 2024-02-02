@@ -32,7 +32,7 @@ Hadde også problemer med å laste inn tilleggsfiler. Dermed ble jeg tvunget til
 
 Laget ferdig details siden.
 
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/95d3a253-55e0-4fb5-a472-58fc620fa2a0)
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a5f0087c-39dd-4a78-8b9a-a600b42e8921)
 
 Laget dialog for å opprette og redigere varer
 
