@@ -55,4 +55,12 @@ Igjen så var det ikke mulig å lage egne vue komponenter fordi rammeverket er b
 
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b1eef6da-09aa-4b75-84ed-af983da0995c)
 
+Har laget kode som oppretter nytt item, returnerer så IDen for å legge det nylig opprettede itemet i handlelisten
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a852f456-02bc-4930-8c8d-68120d01ef88)
+
+Tok meg også friheten til å anvende litt custom css for å få en smooth checkmark og strek-ut animasjon.
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/82aa1b6b-4af3-407a-aa48-bc1cf098f12b)
+
 
