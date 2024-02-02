@@ -1,5 +1,6 @@
 # System Docs
 
+## Torsdag:
 
 Hovedside:
 
@@ -23,7 +24,6 @@ Meny gir mulighet for å slette og redigere:
 
 Progress:
 
-Torsdag:
 Laget fremside, lagt til funksjonalitet for å søke, dele og redigere handlelister
 Laget views og Stored procedures og fikset trigger security.
 Ble hindret av Appframe 365 rammeverket da det oppsto problemer med publisering i tillegg til at det måtte publiseres for å se endringer.
@@ -31,4 +31,28 @@ Ble hindret av Appframe 365 rammeverket da det oppsto problemer med publisering 
 
 Hadde også problemer med å laste inn tilleggsfiler. Dermed ble jeg tvunget til å ha alt i en og samme fil
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/1cf9186f-edbe-4a79-b014-0cbcf72adc6a)
+
+
+## Fredag:
+
+Laget ferdig details siden.
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/95d3a253-55e0-4fb5-a472-58fc620fa2a0)
+
+Laget dialog for å opprette og redigere varer
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/cdc26d17-2109-4cb1-945f-bb7f5d383a33)
+
+har også lagt til funksjonalitet for at kategorien slås sammen når alle varene er avkrysset.
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/513970ad-bda4-419c-95af-e0c4076652f8)
+
+Ved avkryssing av "Create new item" så vil det opprettes ett nytt item, input blir byttet fra lookup til vanlig input da Omega 365 lookup ikke hadde dokumentasjon eller støtte for å lage nytt item
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0c66f03d-de44-49dd-ac6c-e8ef20d7f780)
+
+Igjen så var det ikke mulig å lage egne vue komponenter fordi rammeverket er buggy. Derfor ligger modalen igjen blant resten av koden.
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b1eef6da-09aa-4b75-84ed-af983da0995c)
+
 
