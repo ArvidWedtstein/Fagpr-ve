@@ -4,14 +4,9 @@
 
 Hovedside:
 
-Plus knappen i bunnen åpner 
-
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/4e82186a-2884-4f60-b65d-cc0ead31f5e2)
-
 Plus knappen i bunnen åpner dialogen for å opprette ny handeliste:
 
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3d3c4021-1cab-4e9c-abe9-bd5cb37ca458)
-
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/69c82ebd-0696-447c-b62f-040532d9134e)
 
 Meny gir mulighet for å slette og redigere:
 
