@@ -29,3 +29,6 @@ Laget views og Stored procedures og fikset trigger security.
 Ble hindret av Appframe 365 rammeverket da det oppsto problemer med publisering i tillegg til at det måtte publiseres for å se endringer.
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/78b5664b-766b-4d11-add8-0d4aba1846ad)
 
+Hadde også problemer med å laste inn tilleggsfiler. Dermed ble jeg tvunget til å ha alt i en og samme fil
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/1cf9186f-edbe-4a79-b014-0cbcf72adc6a)
+
