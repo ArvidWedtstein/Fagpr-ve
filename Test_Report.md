@@ -1,5 +1,9 @@
 # Test Report
 
+### Plan for testing
+- Gå gjennom alle hovedfunksjonene
+
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8eda0b15-4c43-4fa5-8a7e-2ec21fe63d4c)
 
 <details open>
   <summary><h3>Hoved Side</h3></summary>
@@ -132,6 +136,44 @@
       </td>
     </tr>
 </table>
+
+
  
+<details open>
+  <summary><h3>Registrering av ny bruker</h3></summary>
+
+<table>
+    <tr>
+      <th>Funksjoner</th>
+      <th>Beskrivelse</th>
+      <th>Resultat</th>
+      <th>Bilder</th>
+    </tr>
+    <tr>
+      <td>Opprette ny bruker</td>
+      <td>Kunne opprette ny bruker gjennom traing login siden</td>
+      <td>Funker, må bare grave frem tilfeldig telefonnummer.</td>
+      <td> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fa73f770-d4c7-4fc7-aa72-c27b77d1b830" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/948ccc1b-8f1a-4307-90da-984a132f0bd3" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fc6474bd-2db2-405a-907e-75d7ed024394" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/ab2d4e85-9cc2-4c36-bc21-435676379441" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/217b1cdb-094b-416a-ad33-3f811db72e96" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/37e6e643-e7b5-47df-9b03-a3fa1353640f" width="48">
+      </td>
+    </tr>
+    <tr>
+      <td>Login bruker</td>
+      <td>Kunne logge inn og havne direkte på siden</td>
+      <td>Funker, fortutsett at du har redirect url</td>
+      <td> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a0403285-e6d5-4a91-a2f0-806ab6343445" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/48e65de3-99ac-4f76-80f4-d8f839feacb5" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a2bc31de-12c4-4ae7-b42b-5d3c6abbc295" width="48">
+      </td>
+    </tr>
+</table>
+</details>
+
 
 </details>
