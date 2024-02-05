@@ -70,20 +70,23 @@
   <tr>
       <td>Legge til ny vare</td>
       <td>Brukeren skal kunne legge til ny vare via "+" knappen i footeren.</td>
-      <td>På desktop funket dette fint. Lookup har problemer med å laste inn slot på mobile view. Dette skyldes fordi lookupen bytter til mobile view som ikke har støtte for slots. NT issue. (Se bilde nr 3)</td>
+      <td>På desktop funket det fint å bruke lookup. Lookupen har problemer med å laste inn slot på mobile view. Dette skyldes fordi lookupen bytter til mobile view som ikke har støtte for slots. NT issue. (Se bilde nr 3). Ellers så funker det som det skal. Fikk lagt til dennis uten problemer</td>
       <td> 
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="48">
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="48">
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="48">
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f5d89137-e652-418d-9598-49f97575d48a" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/70cf9d8f-06ce-4e38-b09f-c6258b86815b" width="48">
       </td>
     </tr>
    <tr>
       <td>Opprette ny vare</td>
-      <td></td>
-      <td></td>
+      <td>Brukeren skal kunne opprette ny vare ved å trykke på "create new item" checkboksen i ny vare dialogen. Brukeren skal ha kunne skrive inn navnet på ønsket vare og så fortsette som vanlig. Varen skal da være tilgjengelig når brukeren legger til nye varer i senere tid.</td>
+      <td>Ny vare ble opprettet, kagt i handelisten og gjort tilgjengelig for senere bruk.</td>
       <td> 
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3f8ff043-5961-44b8-8969-75f6c5df0484" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e29d3e4-8319-43f1-aa28-33f82ddd0710" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7c938445-fc65-4476-b621-dadf76a5af80" width="48">
       </td>
     </tr>
   <tr>
