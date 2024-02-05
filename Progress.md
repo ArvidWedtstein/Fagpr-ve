@@ -62,3 +62,5 @@ Tok meg også friheten til å anvende litt custom css for å få en smooth check
 ## Mandag:
 
 Laget ferdig testrapport og testet løsningen ([Se Testrapport](https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md))
+
+Begynt på brukerveiledning / docs i wiki
