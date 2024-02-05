@@ -91,10 +91,13 @@
     </tr>
   <tr>
       <td>Redigere vare</td>
-      <td></td>
+      <td>Brukeren skal kunne redigere antall, vare og enhet ved redigering av varen.</td>
       <td></td>
       <td> 
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fe44796c-b47b-494f-9720-36e0c9161fa7" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/524b598d-c5c1-49a2-a428-5cc9658e9cec" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8d7dc36f-94e0-4e04-b9d0-c9bc0b49225f" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7da88d81-49fe-45a5-877e-37998d11e0c3" width="48">
       </td>
     </tr>
   <tr>
