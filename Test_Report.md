@@ -1,4 +1,4 @@
-# Test Report
+# Testrapport
 
 ### Plan for testing
 - Gå gjennom alle hovedfunksjonene, skrive ned eventuelle feil og resultat.
