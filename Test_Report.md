@@ -1,8 +1,8 @@
 # Test Report
 
 
-<details>
-  <summary>Hoved Side</summary>
+<details open>
+  <summary><h1>Hoved Side</h1></summary>
 
 <table>
     <tr>
@@ -57,8 +57,8 @@
 </details>
 
 
-<details>
-  <summary>Detalje Side</summary>
+<details open>
+  <summary><h1>Detalje Side</h1></summary>
 
 <table>
     <tr>
@@ -111,18 +111,12 @@
     </tr>
   <tr>
       <td>Krysse ut vare</td>
-      <td></td>
-      <td></td>
+      <td>Brukeren skal kunne krysse ut vare og så få oppdatert handelistestatusen i footeren. Vis itemet er eneste i kategorien, skal kategorien slås sammen.</td>
+      <td>Gikk å krysse ut vare, status og progress ble oppdatert og kategorien ble slått sammen siden det ikke var flere varer der. Vis det eksisterte flere enn en vare, slå forble kategorien åpen (se bilde 3)</td>
       <td> 
-        <img src="" width="48"> 
-      </td>
-    </tr>
-  <tr>
-      <td>Handeliste progress</td>
-      <td>Progressbaren skal automatisk oppdatere seg ved avkryssing av varer og når det legges til ny vare.</td>
-      <td></td>
-      <td> 
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f4a798c0-711a-4199-878d-78d342929465" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/93ec77d6-1ec6-45ef-b2bd-affaf94be0f6" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9f209cdd-3ab1-4e06-bd91-6ca5cda77e0a" width="48">
       </td>
     </tr>
      <tr>
