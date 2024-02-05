@@ -102,10 +102,11 @@
     </tr>
   <tr>
       <td>Slette vare</td>
-      <td></td>
-      <td></td>
+      <td>Brukeren skal kunne slette valgt vare via "3-dotter" menyen</td>
+      <td>Gikk an å slette varen som forventet.</td>
       <td> 
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/18d328e2-fa31-42ca-b42e-5b08ca6cedbc" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/08a8ef3b-9db0-4db7-a592-ac501fd50c32" width="48">
       </td>
     </tr>
   <tr>
