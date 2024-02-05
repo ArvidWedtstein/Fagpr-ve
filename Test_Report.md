@@ -121,10 +121,14 @@
     </tr>
      <tr>
       <td>Søkefelt</td>
-      <td>Ved bruk av søktefeltet skal varene i handlelisten filtreres på navn, antall, kategori osv. </td>
-      <td></td>
+      <td>Ved bruk av søktefeltet skal varene i handlelisten filtreres på navn, antall, kategori osv.</td>
+      <td>Søk på navn, antall, kategori og enhet</td>
       <td> 
-        <img src="" width="48"> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/24c3e900-6529-4ddc-99ee-e0eab7b8b71b" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e2bf7d70-0551-4f91-b462-f8b691f79545" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7e1f8586-4a40-4050-b0bf-63563da6b091" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c01e2f6e-e70e-4d76-9808-39d82fb18b30" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9255288f-3d3a-4cde-8c74-4705dacd3406" width="48">
       </td>
     </tr>
 </table>
