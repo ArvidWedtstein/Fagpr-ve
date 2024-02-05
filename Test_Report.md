@@ -1,10 +1,9 @@
 # Test Report
 
 ### Plan for testing
-- Gå gjennom alle hovedfunksjonene
-
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8eda0b15-4c43-4fa5-8a7e-2ec21fe63d4c)
-
+- Gå gjennom alle hovedfunksjonene, skrive ned eventuelle feil og resultat.
+- Lage ny bruker og logge inn
+  
 <details open>
   <summary><h3>Hoved Side</h3></summary>
 
@@ -136,11 +135,11 @@
       </td>
     </tr>
 </table>
-
+</details>
 
  
 <details open>
-  <summary><h3>Registrering av ny bruker</h3></summary>
+  <summary><h3>Registrering av ny bruker / innlogging</h3></summary>
 
 <table>
     <tr>
@@ -165,7 +164,7 @@
     <tr>
       <td>Login bruker</td>
       <td>Kunne logge inn og havne direkte på siden</td>
-      <td>Funker, fortutsett at du har redirect url</td>
+      <td>Funker, fortutsett at du har redirect url med.</td>
       <td> 
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a0403285-e6d5-4a91-a2f0-806ab6343445" width="48">
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/48e65de3-99ac-4f76-80f4-d8f839feacb5" width="48">
@@ -173,7 +172,4 @@
       </td>
     </tr>
 </table>
-</details>
-
-
 </details>
