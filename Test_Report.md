@@ -2,7 +2,7 @@
 
 
 <details open>
-  <summary><h1>Hoved Side</h1></summary>
+  <summary><h3>Hoved Side</h3></summary>
 
 <table>
     <tr>
@@ -58,7 +58,7 @@
 
 
 <details open>
-  <summary><h1>Detalje Side</h1></summary>
+  <summary><h3>Detalje Side</h3></summary>
 
 <table>
     <tr>
