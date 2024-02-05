@@ -67,7 +67,65 @@
       <th>Resultat</th>
       <th>Bilder</th>
     </tr>
-    
+  <tr>
+      <td>Legge til ny vare</td>
+      <td>Brukeren skal kunne legge til ny vare via "+" knappen i footeren.</td>
+      <td>På desktop funket dette fint. Lookup har problemer med å laste inn slot på mobile view. Dette skyldes fordi lookupen bytter til mobile view som ikke har støtte for slots. NT issue. (Se bilde nr 3)</td>
+      <td> 
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="48">
+        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="48">
+        <img src="" width="48"> 
+      </td>
+    </tr>
+   <tr>
+      <td>Opprette ny vare</td>
+      <td></td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
+  <tr>
+      <td>Redigere vare</td>
+      <td></td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
+  <tr>
+      <td>Slette vare</td>
+      <td></td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
+  <tr>
+      <td>Krysse ut vare</td>
+      <td></td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
+  <tr>
+      <td>Handeliste progress</td>
+      <td>Progressbaren skal automatisk oppdatere seg ved avkryssing av varer og når det legges til ny vare.</td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
+     <tr>
+      <td>Søkefelt</td>
+      <td>Ved bruk av søktefeltet skal varene i handlelisten filtreres på navn, antall, kategori osv. </td>
+      <td></td>
+      <td> 
+        <img src="" width="48"> 
+      </td>
+    </tr>
 </table>
  
 
