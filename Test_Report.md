@@ -45,8 +45,11 @@
       <td>Ved sletting av handleliste skal handelistens innhold slettes og delte brukeren(e) som i tabellen for de som handlelisten var delt med.</td>
       <td>Funket, varer og personer fra handelisten ble slettet.</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a6c8d8d0-d0f5-442b-b6fe-e8bd493b8ca7" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e6a912c-9351-4d41-b9ca-5c3db071880f" width="48">
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fede27f0-e206-4ecc-aaae-7bb7fb102748" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/543ac939-e030-462c-aea3-8437314e20d8" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/4ad8e958-6cd2-453e-9b1e-e908ec6f0544" width="60" /></th>
+        </table>
       </td>
     </tr>
    <tr>
@@ -54,10 +57,12 @@
       <td>Ved bruk av søktefeltet skal handlelistene filtreres på handelistens navn eller den som har laget handelisten eller den som er en del av handlelisten </td>
       <td>Funket å søke på både eier av handeliste, personer i handelisten og navn på handleliste</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/426b1b4a-5bb8-4d6c-8fc1-97fad9141e97" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/30559206-592f-462b-8441-84e3257efa27" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/80db6e94-da5f-4ca3-9350-a78abedfdefe" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/15f7fd52-8bae-4999-9229-c197d30e443e" width="48">
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b1e1e231-4a09-4a6e-b87f-0db280c32ec6" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e5865e9d-a0f0-4418-aa6f-fe5e0fb17c82" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e78e4e8f-12ee-4c63-a141-28a41ac93f52" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6436301c-6a6c-4ddf-9b1a-a8ceb47806b9" width="60" /></th>
+        </table>
       </td>
     </tr>
   <tr>
