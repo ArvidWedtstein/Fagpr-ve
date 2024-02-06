@@ -1,5 +1,3 @@
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e9a89315-93ac-4521-838e-b6661228f45c)
-
 # System Dokumentasjon
 
 <details>
