@@ -17,7 +17,7 @@
     <tr>
       <td>Opprette ny handleliste</td>
       <td>Kunne opprette ny handleliste</td>
-      <td>Funket. Handelisten ble sortert øverst sli kden skal.</td>
+      <td>Funket. Handelisten ble sortert øverst slik den skal.</td>
       <td> 
         <table>
           <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/acb438a5-a793-4f75-88a7-118c1f6c3aaf" width="60" /></th>
