@@ -189,7 +189,7 @@
     </tr>
     <tr>
       <td>Opprette ny bruker</td>
-      <td>Kunne opprette ny bruker gjennom traing login siden</td>
+      <td>Kunne opprette ny bruker gjennom trainig login siden</td>
       <td>Funker, må bare grave frem tilfeldig telefonnummer.</td>
       <td> 
         <table>
