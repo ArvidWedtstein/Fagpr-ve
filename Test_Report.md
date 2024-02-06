@@ -70,12 +70,14 @@
       <td>Ved redigering av handeliste skal det kunne legge til personer som også skal kunne få tilgang til handlelisten, men ikke slette.</td>
       <td>Funket å dele med test bruker. Test Bruker fikk opp handlelisten hos seg og fikk ikke lov å slette den (som ønsket) (se bilde 5). Testbruker fikk også lov å redigere som ønsket.</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/64b81af5-5860-4ec4-af77-d753b1201def" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a1d4dc5d-6370-44a6-835a-1ebc230c8361" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5f72ad0f-709a-4289-be2f-375f26f39f4f" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6e5a29f5-c24c-4e23-b9a6-9debeb9c2630" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/867166d5-3cf9-4aa6-8bb8-44644cf8e704" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c152c3f1-62d9-45ab-b3e5-89f55c65f31e" width="48">
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/64b81af5-5860-4ec4-af77-d753b1201def" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a1d4dc5d-6370-44a6-835a-1ebc230c8361" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5f72ad0f-709a-4289-be2f-375f26f39f4f" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6e5a29f5-c24c-4e23-b9a6-9debeb9c2630" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/867166d5-3cf9-4aa6-8bb8-44644cf8e704" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c152c3f1-62d9-45ab-b3e5-89f55c65f31e" width="60"></th>
+        </table>
       </td>
     </tr>
 </table>
@@ -83,7 +85,9 @@
 
 
 <details open>
-  <summary><h3>Detalje Side</h3></summary>
+  <summary>
+    <h3>Detalje Side</h3>
+  </summary>
 
 <table>
     <tr>
@@ -97,11 +101,14 @@
       <td>Brukeren skal kunne legge til ny vare via "+" knappen i footeren.</td>
       <td>På desktop funket det fint å bruke lookup. Lookupen har problemer med å laste inn slot på mobile view. Dette skyldes fordi lookupen bytter til mobile view som ikke har støtte for slots. NT issue. (Se bilde nr 3). Ellers så funker det som det skal. Fikk lagt til dennis uten problemer</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f5d89137-e652-418d-9598-49f97575d48a" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/70cf9d8f-06ce-4e38-b09f-c6258b86815b" width="48">
+         <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/77b99e31-04c3-4674-82da-5f1d74c2a73b" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f5d89137-e652-418d-9598-49f97575d48a" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/70cf9d8f-06ce-4e38-b09f-c6258b86815b" width="60"></th>
+        </table>
       </td>
     </tr>
    <tr>
