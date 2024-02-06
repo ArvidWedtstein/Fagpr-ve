@@ -1,19 +1,55 @@
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5ca65393-af72-4d40-a1c2-06fc2783f9fc)# System Documentation
+# System Documentation
 
 <details>
-  <summary><h4>Systemoversikt</h4></summary>
-
-- Lage en handeliste app med registrering og innlogging for brukere.
-- Må være flere lister.
-- Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
-
+  <summary>Table of Contents</summary>
+  <ul>
+    <li>
+      <details>
+          <summary><a href="#about-the-project">About The Project</a></summary>
+        <ul>
+          <li><a href="#built-with">Built With</a></li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ul>
 </details>
+
+
 <details>
   <summary><h4>Arkitektur</h4></summary>
     
 - [Layout](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1)
 - [Tabellstruktur](https://drawsql.app/teams/arvid/diagrams/tabellstruktur)
-</details>
+
+  <details>
+    <summary><h5>Views:</h5></summary>
+  
+    <table>
+          <tr>
+            <th>View Navn</th>
+            <th>Beskrivelse</th>
+            <th>Kode</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+             <img
+                src=""
+                width="48"
+              />
+            </td>
+          </tr>
+        </table>
+      </details>
+  </details>
 <details>
   <summary><h4>Funksjonelle krav</h4></summary>
     
@@ -160,7 +196,6 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
         </tr>
       </table>
-
 </details>
 <details>
   <summary><h4>Testing</h4></summary>
@@ -173,6 +208,8 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
 
 - For beskrivelse hvordan applikasjonen brukes se:
   [Brukerveiledning](https://github.com/ArvidWedtstein/Fagproove/wiki)
+
+- Under finner du beskrivelse av funksjonaliteten sammen med litt kode:
 
     <details>
       <summary>
@@ -270,11 +307,22 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
         </tr>
         <tr>
-          <td>Kunne slette handeliste.</td>
+          <td>Slette handeliste.</td>
           <td>
-            Ved sletting av handleliste skal handelistens innhold slettes og delte
-            brukeren(e) som i tabellen for de som handlelisten var delt med.
+            Sletting av handeliste foregår gjennom en dropdown (samme som brukes for å redigere) (se bilde 1).<br>
+            Delete knappen i dropdownen trigger en funksjon osm ber brukeren bekrefte sletting av handelisten (for å unngå sletting med uhell) (se bilde 2).<br>
+            Trykker brukeren ok, så slettes raden fra tabellen.
           </td>
+          <td>
+  <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/377a9857-79cc-4322-a4a0-c5ecb75644b6"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/67751d22-9a94-4328-8964-02af906f9d53"
+              width="48"
+            />
+  </td>
           <td>
             <img
               src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2026915c-2eee-4520-a18f-eef57390b681"
@@ -301,6 +349,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           <td>
             Til søkefelt brukte jeg SearchInput componenten til appframe rammeverket.<br>
             Når inputen i søkefeltet endres kjøres en funksjon som setter filterobject på søkekolonnen til handeliste datasourcen.
+            Søkekolonnen er de relevante feltene joinet sammen til en string i MyShoppingLists viewet.
           </td>
           <td>
             <img
@@ -336,82 +385,100 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
         </tr>
       </table>
-
     </details>
+
+  <details>
+    <summary><h5>Detalje Side</h5></summary>
+
+    <table>
+        <tr>
+          <th>Funksjoner</th>
+          <th>Beskrivelse</th>
+          <th>Kode</th>
+          <th>Bilder</th>
+        </tr>
+      <tr>
+          <td>Legge til ny vare</td>
+          <td></td>
+          <td></td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f5d89137-e652-418d-9598-49f97575d48a" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/70cf9d8f-06ce-4e38-b09f-c6258b86815b" width="48">
+          </td>
+        </tr>
+       <tr>
+          <td>Opprette ny vare</td>
+          <td>Brukeren skal kunne opprette ny vare ved å trykke på "create new item" checkboksen i ny vare dialogen. Brukeren skal ha kunne skrive inn navnet på ønsket vare og så fortsette som vanlig. Varen skal da være tilgjengelig når brukeren legger til nye varer i senere tid.</td>
+          <td></td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3f8ff043-5961-44b8-8969-75f6c5df0484" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e29d3e4-8319-43f1-aa28-33f82ddd0710" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7c938445-fc65-4476-b621-dadf76a5af80" width="48">
+          </td>
+        </tr>
+      <tr>
+          <td>Redigere vare</td>
+          <td>Brukeren skal kunne redigere antall, vare og enhet ved redigering av varen.</td>
+          <td></td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fe44796c-b47b-494f-9720-36e0c9161fa7" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/524b598d-c5c1-49a2-a428-5cc9658e9cec" width="48"> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8d7dc36f-94e0-4e04-b9d0-c9bc0b49225f" width="48"> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7da88d81-49fe-45a5-877e-37998d11e0c3" width="48">
+          </td>
+        </tr>
+      <tr>
+          <td>Slette vare</td>
+          <td>Brukeren skal kunne slette valgt vare via "3-dotter" menyen</td>
+          <td></td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/18d328e2-fa31-42ca-b42e-5b08ca6cedbc" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/08a8ef3b-9db0-4db7-a592-ac501fd50c32" width="48">
+          </td>
+        </tr>
+      <tr>
+          <td>Krysse ut vare</td>
+          <td>Brukeren skal kunne krysse ut vare og så få oppdatert handelistestatusen i footeren. Vis itemet er eneste i kategorien, skal kategorien slås sammen.</td>
+          <td></td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f4a798c0-711a-4199-878d-78d342929465" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/93ec77d6-1ec6-45ef-b2bd-affaf94be0f6" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9f209cdd-3ab1-4e06-bd91-6ca5cda77e0a" width="48">
+          </td>
+        </tr>
+         <tr>
+          <td>Søkefelt</td>
+          <td>
+            Til søkefelt brukte jeg SearchInput componenten til appframe rammeverket (se bilde 1).<br>
+            Når inputen i søkefeltet endres kjøres en funksjon som setter filterobject på søkekolonnen til handeliste datasourcen. (se bilde 2)<br>
+            Søkekolonnen er de relevante feltene fra Goods tabellen joinet sammen til en string som en computed column (se bilde 3).<br>
+            Denne kolonnen er videre joinet med andre relevante felt fra ShoppingListsItems tabellen (se bilde 4).
+          </td>
+          <td>
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e8c5e29f-f5d3-43db-8f13-b9095579308c" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c9ce4ff5-95ab-450c-974e-bed835144a77" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/ba1b8179-46b6-4d4f-a1b4-b71f72bccbab" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/87a1a057-7b47-4dcf-b021-e4c50b8919d8" width="48">
+          </td>
+          <td> 
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/24c3e900-6529-4ddc-99ee-e0eab7b8b71b" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e2bf7d70-0551-4f91-b462-f8b691f79545" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7e1f8586-4a40-4050-b0bf-63563da6b091" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c01e2f6e-e70e-4d76-9808-39d82fb18b30" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9255288f-3d3a-4cde-8c74-4705dacd3406" width="48">
+          </td>
+        </tr>
+    </table>
+    </details> 
   </details>
+  <details>
+  <summary><h4>Feil/Hindringer under utviklingen</h4></summary>
 
-<details open>
-  <summary><h3>Detalje Side</h3></summary>
+</details>
+  <details>
+  <summary><h4>Endringer under utvikling / avvik fra plan</h4></summary>
 
-<table>
-    <tr>
-      <th>Funksjoner</th>
-      <th>Beskrivelse</th>
-      <th>Bilder</th>
-    </tr>
-  <tr>
-      <td>Legge til ny vare</td>
-      <td>Brukeren skal kunne legge til ny vare via "+" knappen i footeren.</td>
-      <td>På desktop funket det fint å bruke lookup. Lookupen har problemer med å laste inn slot på mobile view. Dette skyldes fordi lookupen bytter til mobile view som ikke har støtte for slots. NT issue. (Se bilde nr 3). Ellers så funker det som det skal. Fikk lagt til dennis uten problemer</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0ef658d4-e8b8-4df6-8b88-b097a37a6557" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/001e2abb-622e-46b2-a9d7-73f106f259be" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f5d89137-e652-418d-9598-49f97575d48a" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/70cf9d8f-06ce-4e38-b09f-c6258b86815b" width="48">
-      </td>
-    </tr>
-   <tr>
-      <td>Opprette ny vare</td>
-      <td>Brukeren skal kunne opprette ny vare ved å trykke på "create new item" checkboksen i ny vare dialogen. Brukeren skal ha kunne skrive inn navnet på ønsket vare og så fortsette som vanlig. Varen skal da være tilgjengelig når brukeren legger til nye varer i senere tid.</td>
-      <td>Ny vare ble opprettet, kagt i handelisten og gjort tilgjengelig for senere bruk.</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3f8ff043-5961-44b8-8969-75f6c5df0484" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e29d3e4-8319-43f1-aa28-33f82ddd0710" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7c938445-fc65-4476-b621-dadf76a5af80" width="48">
-      </td>
-    </tr>
-  <tr>
-      <td>Redigere vare</td>
-      <td>Brukeren skal kunne redigere antall, vare og enhet ved redigering av varen.</td>
-      <td></td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fe44796c-b47b-494f-9720-36e0c9161fa7" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/524b598d-c5c1-49a2-a428-5cc9658e9cec" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8d7dc36f-94e0-4e04-b9d0-c9bc0b49225f" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7da88d81-49fe-45a5-877e-37998d11e0c3" width="48">
-      </td>
-    </tr>
-  <tr>
-      <td>Slette vare</td>
-      <td>Brukeren skal kunne slette valgt vare via "3-dotter" menyen</td>
-      <td>Gikk an å slette varen som forventet.</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/18d328e2-fa31-42ca-b42e-5b08ca6cedbc" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/08a8ef3b-9db0-4db7-a592-ac501fd50c32" width="48">
-      </td>
-    </tr>
-  <tr>
-      <td>Krysse ut vare</td>
-      <td>Brukeren skal kunne krysse ut vare og så få oppdatert handelistestatusen i footeren. Vis itemet er eneste i kategorien, skal kategorien slås sammen.</td>
-      <td>Gikk å krysse ut vare, status og progress ble oppdatert og kategorien ble slått sammen siden det ikke var flere varer der. Vis det eksisterte flere enn en vare, slå forble kategorien åpen (se bilde 3)</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f4a798c0-711a-4199-878d-78d342929465" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/93ec77d6-1ec6-45ef-b2bd-affaf94be0f6" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9f209cdd-3ab1-4e06-bd91-6ca5cda77e0a" width="48">
-      </td>
-    </tr>
-     <tr>
-      <td>Søkefelt</td>
-      <td>Ved bruk av søktefeltet skal varene i handlelisten filtreres på navn, antall, kategori osv.</td>
-      <td>Søk på navn, antall, kategori og enhet</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/24c3e900-6529-4ddc-99ee-e0eab7b8b71b" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e2bf7d70-0551-4f91-b462-f8b691f79545" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7e1f8586-4a40-4050-b0bf-63563da6b091" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c01e2f6e-e70e-4d76-9808-39d82fb18b30" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9255288f-3d3a-4cde-8c74-4705dacd3406" width="48">
-      </td>
-    </tr>
-</table>
 </details>
