@@ -3,8 +3,7 @@
 ## Torsdag:
 
 Hovedside:
-
-Plus knappen i bunnen åpner dialogen for å opprette ny handeliste:
+La til plus knappen i bunnen åpner dialogen for å opprette ny handeliste:
 
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/69c82ebd-0696-447c-b62f-040532d9134e)
 
