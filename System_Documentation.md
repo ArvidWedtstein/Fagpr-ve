@@ -310,19 +310,9 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           <td>Slette handeliste.</td>
           <td>
             Sletting av handeliste foregår gjennom en dropdown (samme som brukes for å redigere) (se bilde 1).<br>
-            Delete knappen i dropdownen trigger en funksjon osm ber brukeren bekrefte sletting av handelisten (for å unngå sletting med uhell) (se bilde 2).<br>
+            Delete knappen i dropdownen trigger en funksjon som ber brukeren bekrefte sletting av handelisten (for å unngå sletting med uhell) (se bilde 2).<br>
             Trykker brukeren ok, så slettes raden fra tabellen.
           </td>
-          <td>
-  <img
-              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/377a9857-79cc-4322-a4a0-c5ecb75644b6"
-              width="48"
-            />
-            <img
-              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/67751d22-9a94-4328-8964-02af906f9d53"
-              width="48"
-            />
-  </td>
           <td>
             <img
               src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2026915c-2eee-4520-a18f-eef57390b681"
@@ -432,8 +422,15 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
       <tr>
           <td>Slette vare</td>
-          <td>Brukeren skal kunne slette valgt vare via "3-dotter" menyen</td>
-          <td></td>
+          <td>
+             Sletting av vare foregår gjennom en dropdown (samme som brukes for å redigere) (se bilde 1).<br>
+            Delete knappen i dropdownen trigger en funksjon som ber brukeren bekrefte sletting av varen (for å unngå sletting med uhell) (se bilde 2).<br>
+            Trykker brukeren ok, så slettes raden fra tabellen.
+          </td>
+          <td>
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8f49989f-0c0e-4d92-8522-737951d06b91" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3760300e-13d3-4357-b4c4-4b816a2f4ef1" width="48">
+          </td>
           <td> 
             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/18d328e2-fa31-42ca-b42e-5b08ca6cedbc" width="48">
             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/08a8ef3b-9db0-4db7-a592-ac501fd50c32" width="48">
@@ -441,8 +438,14 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
       <tr>
           <td>Krysse ut vare</td>
-          <td>Brukeren skal kunne krysse ut vare og så få oppdatert handelistestatusen i footeren. Vis itemet er eneste i kategorien, skal kategorien slås sammen.</td>
-          <td></td>
+          <td>
+            Utkryssing av varer skjer gjennom checkbox input som trigger checkItem funksjonen (se bilde 1).<br>
+            Funksjonen sjekker om resten av varene i kategorien også er huket av, vis dette skulle være tilfellet, så slås kategorien sammen (se bilde 2)
+          </td>
+          <td>
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a6e5e885-54dc-460f-95d9-1320ec01c750" width="48">
+            <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b74640e5-c974-4ed4-9336-1d6b40ad2d81" width="48">
+          </td>
           <td> 
             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f4a798c0-711a-4199-878d-78d342929465" width="48">
             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/93ec77d6-1ec6-45ef-b2bd-affaf94be0f6" width="48">
