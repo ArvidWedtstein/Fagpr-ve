@@ -38,13 +38,42 @@
             <th>Kode</th>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
+            <td>aviw_ArvidWedtstein_MyShoppingLists</td>
             <td>
-             <img
-                src=""
-                width="48"
-              />
+              View for å begrense hvem som ser hvilke handelister.<br>
+              Dette viewet tar med seg prosent fullført, hvem listen har blitt delt med for å vise "Shared with" på fremsiden som JSON.<br>
+              Legger også til alle som har fått tildelt handelisten i søkekolonnen.
+            </td>
+            <td>
+             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/78e0cd7e-7fe2-4b99-acac-f2afabc8d5be" width="48" />
+            </td>
+          </tr>
+          <tr>
+            <td>aviw_ArvidWedtstein_ShoppingListsItems</td>
+            <td>
+              Eksisterer for å få med de siste relevante kolonnene for Søke kolonnen, i tilleg til å få med bilde, navn og kategori på varen.<br>
+              Brukes på siden for å vise handelistens innhold.
+            </td>
+            <td>
+              <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c363a359-f5e9-4d78-bbd4-8a770cb1223d" width="48" />
+            </td>
+          </tr>
+          <tr>
+            <td>aviw_ArvidWedtstein_ShoppingListsSharedWith</td>
+            <td>
+              Dette viewet eksisterer bare for å få med navn på hvem handelisten(e) er delt med.
+            </td>
+            <td>
+             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2227c50f-03d3-442e-bb12-4c9148468b34" width="48" />
+            </td>
+          </tr>
+          <tr>
+            <td>aviw_ArvidWedtstein_GoodsLkp</td>
+            <td>
+              Dette viewet eksisterer bare som datasource for lookupen til å legge til ny vare.<br>
+              Viewet tar seg seg dine "personlige" varer so mdu har laget, samt de som eventuelt ble laget av noen i samme handleliste som du er en del av.</td>
+            <td>
+             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c3ef58bb-21f0-4365-803a-30da0d99d051" width="48" />
             </td>
           </tr>
         </table>
