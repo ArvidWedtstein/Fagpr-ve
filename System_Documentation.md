@@ -1,114 +1,92 @@
-# System Documentation
+# System Dokumentasjon
 
 <details>
-  <summary>Table of Contents</summary>
-  <ul>
+  <summary>
+    <b>Table of Contents / Innhold</b>
+  </summary>
+  <ol>
     <li>
-      <details>
-          <summary><a href="#about-the-project">About The Project</a></summary>
-        <ul>
-          <li><a href="#built-with">Built With</a></li>
-        </ul>
-      </details>
+      <a href="#funksjonelle-krav">Funksjonelle krav</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+      <a href="#teknologier">Teknologier</a>
+    </li>
+    <li>
+      <a href="#teknologier">Arkitektur</a>
+       <ul>
+        <li>
+          <a href="#tabeller">Tabeller</a>
+          <ul>
+            <li>
+              <a href="#sikkerhet-i-tabeller">Sikkerhet i Tabeller</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#views">Views</a>
+        </li>
       </ul>
     </li>
-  </ul>
+    <li>
+      <a href="#sikkerhet">Sikkerhet</a>
+    </li>
+    <li>
+      <a href="#testing">Testing</a>
+    </li>
+    <li>
+      <a href="#kilder">Kilder / Ressurser</a>
+    </li>
+  </ol>
 </details>
 
 
-<details>
-  <summary><h4>Arkitektur</h4></summary>
-    
-- [Layout](https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0%3A1&mode=design&t=GO6XAJTYVCoCmlUx-1)
-- [Tabellstruktur](https://drawsql.app/teams/arvid/diagrams/tabellstruktur)
-
-  <details>
-    <summary><h5>Views:</h5></summary>
-  
-    <table>
-          <tr>
-            <th>View Navn</th>
-            <th>Beskrivelse</th>
-            <th>Kode</th>
-          </tr>
-          <tr>
-            <td>aviw_ArvidWedtstein_MyShoppingLists</td>
-            <td>
-              View for å begrense hvem som ser hvilke handelister.<br>
-              Dette viewet tar med seg prosent fullført, hvem listen har blitt delt med for å vise "Shared with" på fremsiden som JSON.<br>
-              Legger også til alle som har fått tildelt handelisten i søkekolonnen.
-            </td>
-            <td>
-             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/78e0cd7e-7fe2-4b99-acac-f2afabc8d5be" width="48" />
-            </td>
-          </tr>
-          <tr>
-            <td>aviw_ArvidWedtstein_ShoppingListsItems</td>
-            <td>
-              Eksisterer for å få med de siste relevante kolonnene for Søke kolonnen, i tilleg til å få med bilde, navn og kategori på varen.<br>
-              Brukes på siden for å vise handelistens innhold.
-            </td>
-            <td>
-              <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c363a359-f5e9-4d78-bbd4-8a770cb1223d" width="48" />
-            </td>
-          </tr>
-          <tr>
-            <td>aviw_ArvidWedtstein_ShoppingListsSharedWith</td>
-            <td>
-              Dette viewet eksisterer bare for å få med navn på hvem handelisten(e) er delt med.
-            </td>
-            <td>
-             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2227c50f-03d3-442e-bb12-4c9148468b34" width="48" />
-            </td>
-          </tr>
-          <tr>
-            <td>aviw_ArvidWedtstein_GoodsLkp</td>
-            <td>
-              Dette viewet eksisterer bare som datasource for lookupen til å legge til ny vare.<br>
-              Viewet tar seg seg dine "personlige" varer so mdu har laget, samt de som eventuelt ble laget av noen i samme handleliste som du er en del av.</td>
-            <td>
-             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c3ef58bb-21f0-4365-803a-30da0d99d051" width="48" />
-            </td>
-          </tr>
-        </table>
-      </details>
-  </details>
-<details>
-  <summary><h4>Funksjonelle krav</h4></summary>
+<details open>
+  <summary>
+    <h2>Funksjonelle krav</h2>
+  </summary>
     
 - Mulighet for registrering og innlogging for brukere.
 - Støtte for flere lister.
 - Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
+<hr>
 </details>
-<details>
-  <summary><h4>Teknologier</h4></summary>
+<details open>
+  <summary>
+    <h2>Teknologier</h2>
+  </summary>
     
 - Appframe 365 (NT)
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 - Vue
 - ArkDashboard Database (for bilder)
+<hr>
 </details>
-<details>
-  <summary><h4>Sikkerhet</h4></summary>
-    
-Sikkerhet er løst ved hjelp av Appframe roller og moduler.
-Bruker får tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f)
-![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892)
+<details open>
+  <summary>
+    <h2>Arkitektur</h2>
+  </summary>
+  
+ <ul>
+    <li>
+      <details>
+          <summary>
+            <h4>Tabeller</h4>:
+          </summary>
+        
+  [Tabellstruktur](https://drawsql.app/teams/arvid/diagrams/tabellstruktur)
+        
+   <details>
+      <summary>
+        <h4>Sikkerhet i Tabeller</h4>:
+      </summary>
 
-For tilgangsstyring så er sql triggere brukt.<br>
-Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller slette rader.
+  For tilgangsstyring så er sql triggere brukt.<br>
+  Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller slette rader.
 
-<table>
+  <table>
         <tr>
-          <th>Tabell</th>
+          <th>Tabell Navn</th>
           <th>Regler Insert</th>
           <th>Regler Update</th>
           <th>Regler Delete</th>
@@ -225,15 +203,93 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
         </tr>
       </table>
+  </details>
+      </details>
+    </li>
+    <li>
+      <details>
+          <summary>
+            <h4>Views</h4>:
+          </summary>
+        
+  <table>
+  <tr>
+    <th>View Navn</th>
+    <th>Beskrivelse</th>
+    <th>Kode</th>
+  </tr>
+  <tr>
+    <td>aviw_ArvidWedtstein_MyShoppingLists</td>
+    <td>
+      View for å begrense hvem som ser hvilke handelister.<br>
+      Dette viewet tar med seg prosent fullført, hvem listen har blitt delt med for å vise "Shared with" på fremsiden som JSON.<br>
+      Legger også til alle som har fått tildelt handelisten i søkekolonnen.
+    </td>
+    <td>
+     <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/78e0cd7e-7fe2-4b99-acac-f2afabc8d5be" width="48" />
+    </td>
+  </tr>
+  <tr>
+    <td>aviw_ArvidWedtstein_ShoppingListsItems</td>
+    <td>
+      Eksisterer for å få med de siste relevante kolonnene for Søke kolonnen, i tilleg til å få med bilde, navn og kategori på varen.<br>
+      Brukes på siden for å vise handelistens innhold.
+    </td>
+    <td>
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c363a359-f5e9-4d78-bbd4-8a770cb1223d" width="48" />
+    </td>
+  </tr>
+  <tr>
+    <td>aviw_ArvidWedtstein_ShoppingListsSharedWith</td>
+    <td>
+      Dette viewet eksisterer bare for å få med navn på hvem handelisten(e) er delt med.
+    </td>
+    <td>
+     <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2227c50f-03d3-442e-bb12-4c9148468b34" width="48" />
+    </td>
+  </tr>
+  <tr>
+    <td>aviw_ArvidWedtstein_GoodsLkp</td>
+    <td>
+      Dette viewet eksisterer bare som datasource for lookupen til å legge til ny vare.<br>
+      Viewet tar seg seg dine "personlige" varer so mdu har laget, samt de som eventuelt ble laget av noen i samme handleliste som du er en del av.</td>
+    <td>
+     <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c3ef58bb-21f0-4365-803a-30da0d99d051" width="48" />
+    </td>
+  </tr>
+</table>
+      </details>
+    </li>
+  </ul>
+  
+  <hr />
 </details>
-<details>
-  <summary><h4>Testing</h4></summary>
+<details open>
+  <summary>
+    <h2>Sikkerhet</h2>
+  </summary>
+    
+  Sikkerhet er løst ved hjelp av Appframe roller og moduler.
+  Bruker får tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
+  
+  ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f)
+  ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892)
+
+<hr />
+</details>
+<details open>
+  <summary>
+    <h2>Testing</h2>
+  </summary>
     
 For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md) der jeg har gått over funksjonene i appen.
 
+<hr />
 </details>
-<details>
-  <summary><h4>Grensesnittbeskrivelse</h4></summary>
+<details open>
+  <summary>
+    <h2>Grensesnittbeskrivelse</h2>
+  </summary>
 
 - For beskrivelse hvordan applikasjonen brukes se:
   [Brukerveiledning](https://github.com/ArvidWedtstein/Fagproove/wiki)
@@ -504,13 +560,19 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
         </tr>
     </table>
-    </details> 
+    </details>
+  <hr />
   </details>
   <details>
-  <summary><h4>Feil/Hindringer under utviklingen</h4></summary>
-
+  <summary>
+    <h2>Feil/Hindringer under utviklingen</h2>
+  </summary>
+<hr />
 </details>
   <details>
-  <summary><h4>Endringer under utvikling / avvik fra plan</h4></summary>
-
+  <summary>
+    <h2>Endringer under utvikling / avvik fra plan</h2>
+  </summary>
+    
+<hr />
 </details>
