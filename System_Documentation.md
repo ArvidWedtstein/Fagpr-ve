@@ -573,7 +573,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
     
 <hr />
 </details>
-<details>
+<details open>
   <summary>
     <h2>Hindringer under utviklingen</h2>
   </summary>
@@ -591,7 +591,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
   </ol>
 <hr />
 </details>
-<details>
+<details open>
   <summary>
     <h2>Avvik fra plan</h2> (Endringer under utvikling)
   </summary>
@@ -601,6 +601,11 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
       <p>
         Ble aldri helt fornøyd med layoutet jeg planla på planleggingsdagen, så endte opp med å komme opp med ett nytt midt på natten på dag 5. <br>
         Dette er bare endringer i layout, så testrapport bilder kan delvis vise gammel layout til tider.
+      </p>
+    </li>
+    <li>
+      <p>
+        Gikk litt utover det jeg hadde planlagt og la til søkefelt for handelister og collapsing av kategorier inne i selve handelisten
       </p>
     </li>
   </ol>
