@@ -62,15 +62,17 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
           <td>
            <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2873e437-e421-4458-9430-ba7c4a84ec3e"
               width="48"
             />
+
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/633879f7-b9e1-4496-aa92-c3ce4f9fac41"
               width="48"
             />
+
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/d2f2a337-c603-4263-8f64-2d90ffae3293"
               width="48"
             />
           </td>
