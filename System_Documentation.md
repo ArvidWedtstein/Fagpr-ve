@@ -696,7 +696,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
 
   <ol>
     <li>
-      Vue docs
+      [Vue docs](https://vuejs.org/guide)
     </li>
     <li>
       Dennis (Erstattning for Omegas mangel på docs.)
