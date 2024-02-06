@@ -111,11 +111,11 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           <td>atbl_ArvidWedtstein_ShoppingListsItems</td>
           <td>
            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
-           Her ligger det også en custom sjekk for om varen som insertes allerede eksisterer. Om den eksiterer så plusses mengden sammen.
+           Her ligger det også en custom sjekk for om varen som insertes allerede eksisterer. Om den eksiterer så plusses mengden sammen (se bilde 4).
           </td>
            <td>
             For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
-           Her ligger det også samme sjekk som i insert triggeren for å sjekke om varen som insertes allerede eksisterer i den handlelisten. Om den eksiterer så plusses mengden sammen.
+           Her ligger det også samme sjekk som i insert triggeren for å sjekke om varen som insertes allerede eksisterer i den handlelisten. Om den eksiterer så plusses mengden sammen (se bilde 4).
           </td>
            <td>
            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer gjennom permissiontables
@@ -131,6 +131,10 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
             />
             <img
               src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/dbb916e3-f86d-4276-bc18-7009d7eeaead"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/35051f9c-44cc-460e-b3fa-a5f72a047f25"
               width="48"
             />
           </td>
