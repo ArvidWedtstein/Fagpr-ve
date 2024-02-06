@@ -321,7 +321,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           <td>
           <p>
             Her vil bruker kunne opprette ny handeliste. <br>
-            Rett er løst med å kalle på en funksjon med -1 index for å lage ny rad. (Bilde 1).<br>
+            Dette er løst med å kalle på en funksjon med -1 index for å lage ny rad. (Bilde 1).<br>
             Funksjonen setter da indeksen på datasourcen til indeksen fra parameteren og setter CreateNewRef verdien til true.<br>
             Indeksen settes for å kunne redigere rett rad i modalen eller for at den ikke skal vise en annen verdi når en lager ny liste siden denne funksjonen brukes til å både opprette og redigere handeliste (bilde 2). <br>
             CreateNewRef brukes for å justere på modal tittel og lagringsknappen avhengig om bruker skal opprette eller redigere (bilde 3).
