@@ -19,22 +19,26 @@
       <td>Kunne opprette ny handleliste</td>
       <td>Funket. Handelisten ble sortert øverst sli kden skal.</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0da5018b-e808-4175-8760-a1d4f1ef26db" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/54504e25-327b-41a7-882f-655ba58521e8" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/084497fa-64c4-493d-aafb-babf1261a1c2" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3012eb71-ba13-4c74-b8fb-398c4d633f3f" width="48">
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/acb438a5-a793-4f75-88a7-118c1f6c3aaf" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6625344b-fbda-4b62-a1a3-906f02d796a3" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3e7e9818-f546-46cc-a58d-28a86976987c" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/67ecfe09-1e8a-43f5-a66a-657331699a5e" width="60" /></th>
+        </table>
       </td>
     </tr>
     <tr>
-      <td>Redigere handleliste </td>
+      <td>Redigere handleliste</td>
       <td>Kunne rediger handleliste og legge til/fjerne personer å dele handelisten med.</td>
-      <td>Funket å redigere. Eneste som ikke funket helt er at "opprett ny" menyen forblir oppe etter at man har lagt til ny person (se siste bildet). Dette er en feil i rammeverket.</td>
+      <td>Funket å redigere. Eneste som ikke funket helt er at "opprett ny" menyen forblir oppe etter at man har lagt til ny person (se siste bildet).</td>
       <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c78bce06-b51e-4664-81ce-bd59797676a3" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8222b7f4-1c07-43ef-8bef-5bc514e5ea5d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d" width="48">
- </td>
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3984c0cf-79b5-440a-bffe-fed7d67a4f63" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/d2d52a9a-5992-4f56-8536-698acc97c6ea" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/94b72b73-2186-4572-b568-10e064d79177" width="60" /></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a2fcb650-ae96-4818-9ac2-a9de5e28d856" width="60" /></th>
+        </table>
+     </td>
     </tr>
     <tr>
       <td>Kunne slette handeliste.</td>
