@@ -65,7 +65,12 @@ Laget ferdig testrapport og testet løsningen ([Se Testrapport](https://github.c
 
 ## Tirsdag:
 
-Begynt på brukerveiledning / docs i wiki.
-
 Gjort layout endringn på hovedsiden siden jeg ikke var fornøyd med hvordan det så ut.
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/43391aca-38f7-43c1-a71a-101d2a42aa1d)
+
+
+Fullført wiki og docs. 
+
+Gjort testrapport bildene litt mer leselige
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/4310262f-9cb2-45a2-af9b-9c9bdd4e9d3b)
+
