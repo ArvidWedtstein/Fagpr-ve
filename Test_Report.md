@@ -126,7 +126,7 @@
   <tr>
       <td>Redigere vare</td>
       <td>Brukeren skal kunne redigere antall, vare og enhet ved redigering av varen.</td>
-      <td></td>
+      <td>Alt funka som det sko</td>
       <td> 
         <table>
           <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fe44796c-b47b-494f-9720-36e0c9161fa7" width="60"></th>
