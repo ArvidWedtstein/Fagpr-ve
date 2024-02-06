@@ -3,7 +3,6 @@
 <details>
   <summary><h4>Systemoversikt</h4></summary>
 
-
 - Lage en handeliste app med registrering og innlogging for brukere.
 - Må være flere lister.
 - Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
@@ -29,7 +28,7 @@
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 - Vue
-- ArkDashboard Database
+- ArkDashboard Database (for bilder)
 </details>
 <details>
   <summary><h4>Sikkerhet</h4></summary>
@@ -38,6 +37,131 @@ Sikkerhet er løst ved hjelp av Appframe roller og moduler.
 Bruker får tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f)
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892)
+
+For tilgangsstyring så er sql triggere brukt.<br>
+Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller slette rader.
+
+<table>
+        <tr>
+          <th>Tabell</th>
+          <th>Regler Insert</th>
+          <th>Regler Update</th>
+          <th>Regler Delete</th>
+          <th>Bilder</th>
+        </tr>
+        <tr>
+          <td>atbl_ArvidWedtstein_Goods</td>
+          <td>
+            Kun brukere som har tabellen i permissiontables får lov å slette/redigere/legge til her.
+          </td>
+          <td>
+            Kun brukere som har tabellen i permissiontables får lov å slette/redigere/legge til her.
+          </td>
+          <td>
+            Kun brukere som har tabellen i permissiontables får lov å slette/redigere/legge til her.
+          </td>
+          <td>
+           <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>atbl_ArvidWedtstein_ShoppingLists</td>
+          <td>
+          <p>
+            Kun brukere som har tabellen i permissiontables får lov å legge til her.
+          </p>
+          </td>
+          <td>
+          <p>
+            For oppdatering så må du eie handelisten som oppdateres, eller ha fått den tildelt i tillegg til å ha tilgang til å gjøre endringer her.<br>
+          </p>
+          </td>
+          <td>
+          <p>
+            For å slette må du eie handelisten.
+          </p>
+          </td>
+          <td>
+           <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>atbl_ArvidWedtstein_ShoppingListsItems</td>
+          <td>
+           For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
+           Her ligger det også en custom sjekk for om varen som insertes allerede eksisterer. Om den eksiterer så plusses mengden sammen.
+          </td>
+           <td>
+            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
+           Her ligger det også samme sjekk som i insert triggeren for å sjekke om varen som insertes allerede eksisterer i den handlelisten. Om den eksiterer så plusses mengden sammen.
+          </td>
+           <td>
+           For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer gjennom permissiontables
+          </td>
+          <td>
+           <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>atbl_ArvidWedtstein_ShoppingListsSharedWith</td>
+          <td>
+            Bare brukere som eier handelisten kan dele den videre.
+          </td>
+          <td>
+             Bare brukere som eier handelisten kan oppdatere hvem som skal kunne se den.
+          </td>
+          <td>
+            Bare brukere som eier handelisten kan fjerne delte folk.
+          </td>
+          <td>
+           <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+        </tr>
+      </table>
 
 </details>
 <details>
@@ -49,64 +173,151 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
 <details>
   <summary><h4>Grensesnittbeskrivelse</h4></summary>
 
-<details>
-  <summary><h5>Hoved Side</h5></summary>
-<table>
-    <tr>
-      <th>Funksjoner</th>
-      <th>Beskrivelse</th>
-      <th>Kode</th> 
-      <th>Bilder</th> 
-    </tr>
-    <tr>
-      <td>Opprette ny handleliste</td>
-      <td>Her vil bruker kunne opprette ny handeliste</td>
-      <td>
-          <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/32e06dcc-c83a-4b65-a593-7d01920158bf" width="48">
-      </td>
-      <td style="display: inline-block"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0e7025e5-3653-4cb3-8b30-7a2a24dc85a4" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/54504e25-327b-41a7-882f-655ba58521e8" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/084497fa-64c4-493d-aafb-babf1261a1c2" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3012eb71-ba13-4c74-b8fb-398c4d633f3f" width="48">
-      </td>
-    </tr>
-    <tr>
-      <td>Redigere handleliste </td>
-      <td>Kunne rediger handleliste og legge til/fjerne personer å dele handelisten med.</td>
-      <td>Funket å redigere. Eneste som ikke funket helt er at "opprett ny" menyen forblir oppe etter at man har lagt til ny person (se siste bildet). Dette er en feil i rammeverket.</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c78bce06-b51e-4664-81ce-bd59797676a3" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8222b7f4-1c07-43ef-8bef-5bc514e5ea5d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d" width="48">
- </td>
-    </tr>
-    <tr>
-      <td>Kunne slette handeliste.</td>
-      <td>Ved sletting av handleliste skal handelistens innhold slettes og delte brukeren(e) som i tabellen for de som handlelisten var delt med.</td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a6c8d8d0-d0f5-442b-b6fe-e8bd493b8ca7" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e6a912c-9351-4d41-b9ca-5c3db071880f" width="48">
-      </td>
-    </tr>
-   <tr>
-      <td>Søkefelt</td>
-      <td>Ved bruk av søktefeltet skal handlelistene filtreres på handelistens navn eller den som har laget handelisten eller den som er en del av handlelisten </td>
-      <td> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/426b1b4a-5bb8-4d6c-8fc1-97fad9141e97" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/30559206-592f-462b-8441-84e3257efa27" width="48">
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/80db6e94-da5f-4ca3-9350-a78abedfdefe" width="48"> 
-        <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/15f7fd52-8bae-4999-9229-c197d30e443e" width="48">
-      </td>
-    </tr>
-</table>
-</details>
+- For beskrivelse hvordan applikasjonen brukes se:
+  [Brukerveiledning](https://github.com/ArvidWedtstein/Fagproove/wiki)
 
-</details>
+    <details>
+      <summary>
+        <h5>Hoved Side</h5>
+      </summary>
+      <table>
+        <tr>
+          <th>Funksjoner</th>
+          <th>Beskrivelse</th>
+          <th>Kode</th>
+          <th>Bilder</th>
+        </tr>
+        <tr>
+          <td>Opprette ny handleliste</td>
+          <td>
+          <p>
+            Her vil bruker kunne opprette ny handeliste. <br>
+            Rett er løst med å kalle på en funksjon med -1 index for å lage ny rad. (Bilde 1).<br>
+            Funksjonen setter da indeksen på datasourcen til indeksen fra parameteren og setter CreateNewRef verdien til true.<br>
+            Indeksen settes for å kunne redigere rett rad i modalen eller for at den ikke skal vise en annen verdi når en lager ny liste siden denne funksjonen brukes til å både opprette og redigere handeliste (bilde 2). <br>
+            CreateNewRef brukes for å justere på modal tittel og lagringsknappen avhengig om bruker skal opprette eller redigere (bilde 3).
+          </p>
+          </td>
+          <td>
+          <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+          <td>
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0e7025e5-3653-4cb3-8b30-7a2a24dc85a4"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/54504e25-327b-41a7-882f-655ba58521e8"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/084497fa-64c4-493d-aafb-babf1261a1c2"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3012eb71-ba13-4c74-b8fb-398c4d633f3f"
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Redigere handleliste</td>
+          <td>
+            Redigering av handeliste gjøres gjennom en dropdown meny (bilde 1).<br>
+            Denne kaller på samme funksjon som når en lager ny handeliste, bare med indeksen til nåværende rad (bilde 2).<br>
+            En modal med mulighet for å redigere navn og delte personer åpnes (se bilde 3). 
+          </td>
+          <td>
+          <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+            <img
+              src=""
+              width="48"
+            />
+          </td>
+          <td>
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c78bce06-b51e-4664-81ce-bd59797676a3"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8222b7f4-1c07-43ef-8bef-5bc514e5ea5d"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8142659b-ea2f-407b-89db-227c635bb02d"
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Kunne slette handeliste.</td>
+          <td>
+            Ved sletting av handleliste skal handelistens innhold slettes og delte
+            brukeren(e) som i tabellen for de som handlelisten var delt med.
+          </td>
+          <td>
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a6c8d8d0-d0f5-442b-b6fe-e8bd493b8ca7"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2e6a912c-9351-4d41-b9ca-5c3db071880f"
+              width="48"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Søkefelt</td>
+          <td>
+            Ved bruk av søktefeltet skal handlelistene filtreres på handelistens
+            navn eller den som har laget handelisten eller den som er en del av
+            handlelisten
+          </td>
+          <td>
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/426b1b4a-5bb8-4d6c-8fc1-97fad9141e97"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/30559206-592f-462b-8441-84e3257efa27"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/80db6e94-da5f-4ca3-9350-a78abedfdefe"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/15f7fd52-8bae-4999-9229-c197d30e443e"
+              width="48"
+            />
+          </td>
+        </tr>
+      </table>
 
-
-
+    </details>
+  </details>
 
 <details open>
   <summary><h3>Detalje Side</h3></summary>
@@ -115,7 +326,6 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
     <tr>
       <th>Funksjoner</th>
       <th>Beskrivelse</th>
-      <th>Resultat</th>
       <th>Bilder</th>
     </tr>
   <tr>
