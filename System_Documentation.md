@@ -94,15 +94,15 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
           <td>
            <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f6b4e821-d8fc-4dd1-9c82-d10f34640797"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/ad05a4e4-7203-4428-a7f2-cc4725b8f09c"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a336b9dd-d08b-4f91-85e5-c8fed418ea0c"
               width="48"
             />
           </td>
@@ -122,15 +122,15 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
           <td>
            <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/45b96cc2-70db-4237-a26c-0cdef9045487"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/fafacb52-2b96-49e8-b5f6-2cbed1a1b3c2"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/dbb916e3-f86d-4276-bc18-7009d7eeaead"
               width="48"
             />
           </td>
@@ -148,15 +148,15 @@ Disse sørger for at ikke hvem som helst får lov å legge til, oppdatere eller 
           </td>
           <td>
            <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/235ab8bc-1b15-440f-98cb-6d934c7adefd"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/07b90565-1e37-436d-812c-8bcbdfb9be80"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/dac51ae5-5540-4e60-bdb5-f7a31f3c0a78"
               width="48"
             />
           </td>
