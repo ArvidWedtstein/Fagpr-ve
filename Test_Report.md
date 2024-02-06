@@ -125,7 +125,7 @@
      <tr>
       <td>Søkefelt</td>
       <td>Ved bruk av søktefeltet skal varene i handlelisten filtreres på navn, antall, kategori osv.</td>
-      <td>Søk på navn, antall, kategori og enhet</td>
+      <td>Søk på navn, antall, kategori og enhet funket</td>
       <td> 
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/24c3e900-6529-4ddc-99ee-e0eab7b8b71b" width="48">
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e2bf7d70-0551-4f91-b462-f8b691f79545" width="48">
