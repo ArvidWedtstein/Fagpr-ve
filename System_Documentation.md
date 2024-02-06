@@ -1,4 +1,4 @@
-# System Documentation
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5ca65393-af72-4d40-a1c2-06fc2783f9fc)# System Documentation
 
 <details>
   <summary><h4>Systemoversikt</h4></summary>
@@ -238,15 +238,15 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
           <td>
           <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/d2a2591d-0be2-4e27-aac4-cd32a208e47c"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a1588061-4658-4a0f-85db-fd64211f927e"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/277a1761-802b-46fe-b010-97547a613129"
               width="48"
             />
           </td>
@@ -277,6 +277,16 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
           <td>
             <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2026915c-2eee-4520-a18f-eef57390b681"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/368ee55d-433a-406a-beb4-25cb107fde52"
+              width="48"
+            />
+          </td>
+          <td>
+            <img
               src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a6c8d8d0-d0f5-442b-b6fe-e8bd493b8ca7"
               width="48"
             />
@@ -289,9 +299,22 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         <tr>
           <td>Søkefelt</td>
           <td>
-            Ved bruk av søktefeltet skal handlelistene filtreres på handelistens
-            navn eller den som har laget handelisten eller den som er en del av
-            handlelisten
+            Til søkefelt brukte jeg SearchInput componenten til appframe rammeverket.<br>
+            Når inputen i søkefeltet endres kjøres en funksjon som setter filterobject på søkekolonnen til handeliste datasourcen.
+          </td>
+          <td>
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8fff3a3c-fce1-4247-9530-26d6cb5f4d3e"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3db02a23-8c26-461e-a683-aff983e289e2"
+              width="48"
+            />
+            <img
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7ec1ebcd-7f0e-4cec-b43a-c8d1913ba65f"
+              width="48"
+            />
           </td>
           <td>
             <img
