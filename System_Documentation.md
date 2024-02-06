@@ -34,6 +34,15 @@
       <a href="#testing">Testing</a>
     </li>
     <li>
+      <a href="#grensesnittbeskrivelse">Grensesnittbeskrivelse</a>
+    </li>
+    <li>
+      <a href="#hindringer-under-utviklingen">Hindringer under utviklingen</a>
+    </li>
+    <li>
+      <a href="#avvik-fra-plan">Avvik fra plan</a>
+    </li>
+    <li>
       <a href="#kilder">Kilder / Ressurser</a>
     </li>
   </ol>
@@ -559,20 +568,42 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
             <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9255288f-3d3a-4cde-8c74-4705dacd3406" width="48">
           </td>
         </tr>
-    </table>
+      </table>
     </details>
-  <hr />
-  </details>
-  <details>
-  <summary>
-    <h2>Feil/Hindringer under utviklingen</h2>
-  </summary>
+    
 <hr />
 </details>
-  <details>
+<details>
   <summary>
-    <h2>Endringer under utvikling / avvik fra plan</h2>
+    <h2>Hindringer under utviklingen</h2>
   </summary>
-    
+
+  <ol>
+    <li>
+      <p>
+        Under utviklingen så møtte jeg på NT bug der jeg ikke fikk lagt til custom components i koden. (Disallowed MIME type error) (se bilde 1)<br>
+        Dette resulterte i at all koden måtte ligge i samme filen. Har prøvd å holde orden alikevel ved å markere start og slutt på det som ellers hadde blitt en component (se bilde 3)
+      </p>
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/bf3a069d-426a-4754-9824-80efc8b597d2" width="60">
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/af97cd91-8b90-4491-8e62-49795f95f486" width="60">
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/92b6bbd7-289d-4d28-9208-1715400fb68b" width="60">
+    </li>
+  </ol>
+<hr />
+</details>
+<details>
+  <summary>
+    <h2>Avvik fra plan</h2> (Endringer under utvikling)
+  </summary>
+
+  <ol>
+    <li>
+      <p>
+        Ble aldri helt fornøyd med layoutet jeg planla på planleggingsdagen, så endte opp med å komme opp med ett nytt midt på natten på dag 5. <br>
+        Dette er bare endringer i layout, så testrapport bilder kan delvis vise gammel layout til tider.
+      </p>
+    </li>
+  </ol>
+ 
 <hr />
 </details>
