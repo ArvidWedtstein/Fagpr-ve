@@ -696,10 +696,22 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
 
   <ol>
     <li>
-      [Vue docs](https://vuejs.org/guide/introduction.html)
+      <a href="https://vuejs.org/guide/introduction.html" title="Vue Docs">Vue Docs</a>
     </li>
     <li>
-      Dennis (Erstattning for Omegas mangel på docs.)
+      <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap Docs</a>
+    </li>
+    <li>
+      <a href="#">Sitesetup</a>
+    </li>
+    <li>
+      <a href="#">Sitesetup</a>
+    </li>
+    <li>
+      <a href="#">Code search</a>
+    </li>
+    <li>
+      Dennis (Erstattning for Omegas mangel på docs)
     </li>
   </ol>
  
