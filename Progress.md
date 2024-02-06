@@ -63,4 +63,10 @@ Tok meg også friheten til å anvende litt custom css for å få en smooth check
 
 Laget ferdig testrapport og testet løsningen ([Se Testrapport](https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md))
 
-Begynt på brukerveiledning / docs i wiki
+
+## Tirsdag:
+
+Begynt på brukerveiledning / docs i wiki.
+
+Gjort layout endringn på hovedsiden siden jeg ikke var fornøyd med hvordan det så ut.
+![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/43391aca-38f7-43c1-a71a-101d2a42aa1d)
