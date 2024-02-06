@@ -198,15 +198,15 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
           <td>
           <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b947ce12-290c-414b-aceb-fc4d5aa65b3e"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/a666985a-2cd5-4afc-b32b-540a0de20924"
               width="48"
             />
             <img
-              src=""
+              src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/188f3c55-8baa-47da-bdc3-b784847bae06"
               width="48"
             />
           </td>
