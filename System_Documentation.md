@@ -182,7 +182,7 @@
           </td>
         </tr>
         <tr>
-          <td><b>atbl_ArvidWedtstein_ShoppingListsItems<</td>
+          <td><b>atbl_ArvidWedtstein_ShoppingListsItems</td>
           <td>
                 Tabell som varene i en handeliste lagres i.<br> 
                 Denne har en many-to-one relasjon med ShoppingLists tabellen og en relasjon til Goods tabellen.
@@ -214,10 +214,11 @@
           <td>atbl_ArvidWedtstein_ShoppingListsSharedWith</td>
           <td>
                 Tabell for å holde styr på hvem en handeliste har blitt delt med.<br>
-                Har en many-to-one relasjon til Handeliste tabellen
+                Har en many-to-one relasjon til Handeliste tabellen.
           </td>
           <td>
-            Bare brukere som eier handelisten kan dele den videre.
+            Bare brukere som eier handelisten kan dele den videre.<br />
+            Her ligger det også sjekk for at man ikke kan dele handelisten med eieren.
           </td>
           <td>
              Bare brukere som eier handelisten kan oppdatere hvem som skal kunne se den.
