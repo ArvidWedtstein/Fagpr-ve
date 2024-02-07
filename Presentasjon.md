@@ -6,6 +6,8 @@ Presentasjon:
 
 3. Visa kode?
 4. Gå over valg av teknologi, sikkerhet. roller
+5. GDPR
+6. Copyright, ark
 
 <!-- Egenvurdering -->
 5. Forklart hvilke problemer eg møtte på underveis.
