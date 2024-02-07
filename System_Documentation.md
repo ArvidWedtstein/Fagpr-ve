@@ -717,7 +717,17 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
       </p>
       <table>
         <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/41984788-66c4-4755-b1a6-da0c55806a26" width="60"></th>
-      </table>  
+      </table> 
+    </li>
+    <li>
+      <p>
+        Har hatt litt problemer med ODataGrid componenten.<br/>
+        Dialogen for å oppretta ny row forblir åpen når modalen lukkes og lukker da åpnet opp igjen vis man redigerer en annen handeliste
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6cb76787-d89f-4607-99fa-bcb2c8396980" width="60"></th>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/172f11f8-9c9d-499c-9625-65178fde918e" width="60"></th>
+      </table> 
     </li>
     <li>
       <p>
