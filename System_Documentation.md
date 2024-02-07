@@ -1,6 +1,6 @@
 # System Dokumentasjon
-
-<details>
+      
+<details open>
   <summary>
     <b>Table of Contents / Innhold</b>
   </summary>
@@ -671,6 +671,34 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         Å måtta publisera hver einaste gang for å se hver bittelille endring, e litt for mye forlangt.<br>
         Føle eg e bedre off med å bruka R4 Web og bare importa noen libraries neste gang istedenfor.
       </p>
+    </li>
+    <li>
+      <p>
+        Hadde under utviklingen problem med at "0 records" blei affecta ved update.<br>
+        Etter en liten teams gjennomgang med Tor og Mr Hoff, <br>
+        så viste det seg at eg e blind og ikke klarte å se at det sto at an bruke view istedenfor atbl.
+        Siå atbv'en kom med "WHERE 1=2" som default, så kunne det ikkje funka.
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/41984788-66c4-4755-b1a6-da0c55806a26" width="60"></th>
+      </table>  
+    </li>
+    <li>
+      <p>
+        Hadde også delvis publiseringsproblemer (i tillegg til å måtte publisere hver gang)<br>
+        Såg ut som Appframe ikkje klarte å setta versjon sjøl til tider.<br>
+        Va visst et common problem, så endte opp med å bare manuelt updata versjonsnummeret noen hakk opp fra det an va tidligere
+      </p>
+      
+  ```sql
+  UPDATE V
+  SET V.Version = 42069
+  FROM dbo.stbl_o365_apps AS V
+  WHERE V.PrimKey = '2056efbd-687c-4a99-9419-cf89ba6f2393'
+  ```
+  <table>
+    <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7d391b1d-0d30-4dce-a51f-59d9b0b54377" width="60"></th>
+  </table>
     </li>
   </ol>
 <hr />
