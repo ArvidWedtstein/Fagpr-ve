@@ -78,3 +78,5 @@ Gjort testrapport bildene litt mer leselig
 ## Onsdag:
 
 Finjustert på system dokumentasjon og test rapport.
+
+Lagt en kjapp presentasjon / plan om ka eg ska visa på torsdag
