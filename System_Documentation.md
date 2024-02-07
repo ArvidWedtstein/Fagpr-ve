@@ -312,9 +312,17 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
     
   Sikkerhet er løst ved hjelp av Appframe roller og moduler.
   Bruker får tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
-  
-  ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f)
-  ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892)
+   <table>
+    <th>
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f" width="60" />
+    </th>
+    <th>
+      <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892" width="60" />
+    </th>
+  </table>
+
+  Innlogging går gjennom SQL login eller gjennom microsoft innlogging.<br>
+  Passord og Brukernavn blir sjekka opp mot databasen.
 
 <hr />
 </details>
@@ -344,7 +352,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
       <table>
         <tr>
           <th>Funksjoner</th>
-          <th colspan="2">
+          <th width="500" colspan="2">
             Beskrivelse
           </th>
           <th>Kode</th>
@@ -888,6 +896,9 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
     </li>
     <li>
       <a href="#">Sitesetup</a>
+    </li>
+    <li>
+      <a href="#">Omega GPT</a>
     </li>
     <li>
       <a href="#">Code search</a>
