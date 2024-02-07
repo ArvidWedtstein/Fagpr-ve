@@ -665,6 +665,13 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6800d777-9f58-4d25-b961-8b8ae7d8d186" width="60"></th>
       </table>    
     </li>
+    <li>
+      <p>
+        NT i training har i seg sjøl vært en stor hindring.<br>
+        Å måtta publisera hver einaste gang for å se hver bittelille endring, e litt for mye forlangt.<br>
+        Føle eg e bedre off med å bruka R4 Web og bare importa noen libraries neste gang istedenfor.
+      </p>
+    </li>
   </ol>
 <hr />
 </details>
