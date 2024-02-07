@@ -186,14 +186,13 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
         <tr>
           <td><b>atbl_ArvidWedtstein_ShoppingListsItems</td>
           <td>
-                Tabell som varene i en handeliste lagres i.<br> 
-                Denne har en many-to-one relasjon med ShoppingLists tabellen og en relasjon til Goods tabellen.
+              Tabell for varene i en handeliste.
           </td>
           <td>
-           For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
+           For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.
           </td>
            <td>
-            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
+            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.
           </td>
            <td>
            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer gjennom permissiontables
@@ -215,8 +214,7 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
         <tr>
           <td>atbl_ArvidWedtstein_ShoppingListsSharedWith</td>
           <td>
-                Tabell for å holde styr på hvem en handeliste har blitt delt med.<br>
-                Har en many-to-one relasjon til Handeliste tabellen.
+              Tabell for å holde styr på hvem en handeliste har blitt delt med.
           </td>
           <td>
             Bare brukere som eier handelisten kan dele den videre.<br />
