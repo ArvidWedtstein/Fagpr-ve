@@ -7,3 +7,6 @@ Presentasjon:
 3. Visa kode?
 4. Gå over valg av teknologi, sikkerhet. roller
 
+<!-- Egenvurdering -->
+5. Forklart hvilke problemer eg møtte på underveis.
+6. Forklara ka eg ville gjort annerledes neste gang
