@@ -75,6 +75,7 @@
   - Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
   - Fritekstsøk (Denne kom som scope endring på 3. dag av prøven)
 
+Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedtstein/Fagproove/wiki)
 <hr>
 </details>
 <details open>
