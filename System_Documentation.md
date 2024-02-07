@@ -84,6 +84,7 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
   </summary>
     
 - Appframe 365 (NT)
+    - Detta blei brukt fordi det allerede har innebygd funksjonalitet for sikkerhet rundt innlogging, registrering osv.
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 - Vue
