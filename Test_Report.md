@@ -65,7 +65,7 @@
         </table>
       </td>
     </tr>
-  <tr>
+    <tr>
       <td>Dele handleliste</td>
       <td>Ved redigering av handeliste skal det kunne legge til personer som også skal kunne få tilgang til handlelisten, men ikke slette.</td>
       <td>Funket å dele med test bruker. Test Bruker fikk opp handlelisten hos seg og fikk ikke lov å slette den (som ønsket) (se bilde 5). Testbruker fikk også lov å redigere som ønsket.</td>
@@ -77,6 +77,32 @@
           <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6e5a29f5-c24c-4e23-b9a6-9debeb9c2630" width="60"></th>
           <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/867166d5-3cf9-4aa6-8bb8-44644cf8e704" width="60"></th>
           <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c152c3f1-62d9-45ab-b3e5-89f55c65f31e" width="60"></th>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>Dele handleliste med eier</td>
+      <td>Ved deling av handleliste skal det ikke kunne deles med eieren av handelisten</td>
+      <td>Funket. Bruker får feilmelding om det forsøkes å dele med eier</td>
+      <td> 
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/104a5732-3efb-4205-bfea-dc1ecca559d0" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/3d2027f8-3bcf-43b8-85f6-25a0c15cd005" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/571d42b2-4c89-4b91-9be1-272cb3d39246" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/d3aabb48-66c7-4761-85b4-d383620ac872" width="60"></th>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>Dele handleliste med samme person to ganger</td>
+      <td>Ved deling av handleliste skal det ikke kunne deles med personer som handlelisten allerede har blitt delt med</td>
+      <td>Funket. Bruker får feilmelding om det forsøkes å dele med personer som handelisten allerede har blitt delt med.</td>
+      <td> 
+        <table>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6d9ee159-9975-468b-816d-31f3485624b1" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b8e7464b-c167-4526-b653-0b882714a9c7" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/044b2e2c-73d1-47e7-a487-511e04601db9" width="60"></th>
+          <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/63945fe2-943a-4d7d-90dc-e0679b9c0431" width="60"></th>
         </table>
       </td>
     </tr>
