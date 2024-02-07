@@ -6,6 +6,9 @@
   </summary>
   <ol>
     <li>
+      <a href="#oversikt">Oversikt</a>
+    </li>
+    <li>
       <a href="#funksjonelle-krav">Funksjonelle krav</a>
     </li>
     <li>
@@ -52,7 +55,6 @@
   <summary>
     <h2>Oversikt</h2>
   </summary>
-    
 
 <hr>
 </details>
@@ -103,13 +105,18 @@
   <table>
         <tr>
           <th>Tabell Navn</th>
+          <th>Beskrivelse</th>
           <th>Regler Insert</th>
           <th>Regler Update</th>
           <th>Regler Delete</th>
           <th>Bilder</th>
         </tr>
         <tr>
-          <td>atbl_ArvidWedtstein_Goods</td>
+          <td><b>atbl_ArvidWedtstein_Goods</b></td>
+          <td>
+            Dataene i denne tabellen er hentet direkte fra ArkDashboard databasen.<br>
+            Dermed fikk jeg bilder, og slapp å inserte items selv.
+          </td>
           <td>
             Kun brukere som har tabellen i permissiontables får lov å slette/redigere/legge til her.
           </td>
@@ -135,6 +142,7 @@
         </tr>
         <tr>
           <td>atbl_ArvidWedtstein_ShoppingLists</td>
+          <td>Tabell som handelistene lagres i</td>
           <td>
           <p>
             Kun brukere som har tabellen i permissiontables får lov å legge til her.
@@ -167,6 +175,10 @@
         <tr>
           <td>atbl_ArvidWedtstein_ShoppingListsItems</td>
           <td>
+                Tabell som varene i en handeliste lagres i.<br> 
+                Denne har en many-to-one relasjon med ShoppingLists tabellen og en relasjon til Goods tabellen.
+          </td>
+          <td>
            For å kunne legge til her må brukeren være en del av handelisten eller fått den tildelt og i tillegg ha tilgang til å gjøre endringer.<br>
           </td>
            <td>
@@ -191,6 +203,10 @@
         </tr>
         <tr>
           <td>atbl_ArvidWedtstein_ShoppingListsSharedWith</td>
+          <td>
+                Tabell for å holde styr på hvem en handeliste har blitt delt med.<br>
+                Har en many-to-one relasjon til Handeliste tabellen
+          </td>
           <td>
             Bare brukere som eier handelisten kan dele den videre.
           </td>
