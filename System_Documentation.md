@@ -86,7 +86,7 @@
 - [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 - Vue
-- ArkDashboard Database (for bilder)
+- ArkDashboard Database (for bilder og items)
 <hr>
 </details>
 <details open>
@@ -150,7 +150,7 @@
           </td>
         </tr>
         <tr>
-          <td>atbl_ArvidWedtstein_ShoppingLists</td>
+          <td><b>atbl_ArvidWedtstein_ShoppingLists</b></td>
           <td>Tabell som handelistene lagres i</td>
           <td>
           <p>
@@ -182,7 +182,7 @@
           </td>
         </tr>
         <tr>
-          <td>atbl_ArvidWedtstein_ShoppingListsItems</td>
+          <td><b>atbl_ArvidWedtstein_ShoppingListsItems<</td>
           <td>
                 Tabell som varene i en handeliste lagres i.<br> 
                 Denne har en many-to-one relasjon med ShoppingLists tabellen og en relasjon til Goods tabellen.
@@ -228,7 +228,7 @@
           <td>
             <table>
               <th>
-                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/235ab8bc-1b15-440f-98cb-6d934c7adefd" width="60" />
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5e81f43d-b2df-45be-a349-de5f8e3d8d18" width="60" />
               </th>
               <th>
                 <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/07b90565-1e37-436d-812c-8bcbdfb9be80" width="60" />
