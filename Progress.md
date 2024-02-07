@@ -45,7 +45,7 @@ Ved avkryssing av "Create new item" så vil det opprettes ett nytt item, input b
 
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0c66f03d-de44-49dd-ac6c-e8ef20d7f780)
 
-Igjen så var det ikke mulig å lage egne vue komponenter fordi rammeverket er buggy. Derfor ligger modalen igjen blant resten av koden.
+Igjen så var det ikke mulig å lage egne vue komponenter. Derfor ligger modalen igjen blant resten av koden.
 
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/b1eef6da-09aa-4b75-84ed-af983da0995c)
 
@@ -71,6 +71,10 @@ Gjort layout endringn på hovedsiden siden jeg ikke var fornøyd med hvordan det
 
 Fullført wiki og docs. 
 
-Gjort testrapport bildene litt mer leselige
+Gjort testrapport bildene litt mer leselig
 ![image](https://github.com/ArvidWedtstein/Fagproove/assets/71834553/4310262f-9cb2-45a2-af9b-9c9bdd4e9d3b)
 
+
+## Onsdag:
+
+Finjustert på system dokumentasjon og test rapport.
