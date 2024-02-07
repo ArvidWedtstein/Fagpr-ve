@@ -12,3 +12,6 @@ Presentasjon:
 6. Forklara ka eg ville gjort annerledes neste gang
 
 https://app.kompetanseboka.no/minkompetanse/apprentices/56792/assignments/5560/tasks
+
+
+https://omegaoffice-my.sharepoint.com/personal/arvid_wedtstein_omega365_com/_layouts/15/doc.aspx?sourcedoc={ba62dc05-71da-4337-92e1-ed0b28ce743f}&action=edit
