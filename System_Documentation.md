@@ -76,6 +76,8 @@
   - Fritekstsøk (Denne kom som scope endring på 3. dag av prøven)
 
 Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedtstein/Fagproove/wiki)
+
+Progress timeline: [Progress?](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
 <hr>
 </details>
 <details open>
@@ -311,7 +313,11 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
   </summary>
     
   Sikkerhet er løst ved hjelp av Appframe roller og moduler.
-  Bruker får tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
+  Ved registrering av ny bruker, må bruker få tildelt en rolle. Rollen er koblet til en egen modul som da gir brukeren tilgang til appen(e) og tabellene.
+  
+  For sikkerhet til autentisering så brukes det AD FS (Active Directory Federation Service).<br>
+  Innlogging går gjennom SQL login eller gjennom microsoft innlogging på en sikker og forsvarlig måte.
+
    <table>
     <th>
       <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0a9f2864-7bc9-4ea0-9a3f-412339a1ea1f" width="60" />
@@ -320,10 +326,7 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
       <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8647a516-2559-4f8b-9969-6d4cdfa02892" width="60" />
     </th>
   </table>
-
-  Innlogging går gjennom SQL login eller gjennom microsoft innlogging.<br>
-  Passord og Brukernavn blir sjekka opp mot databasen.
-
+  
 <hr />
 </details>
 <details open>
