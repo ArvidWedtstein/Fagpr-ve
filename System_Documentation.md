@@ -218,10 +218,11 @@
           </td>
           <td>
             Bare brukere som eier handelisten kan dele den videre.<br />
-            Her ligger det også sjekk for at man ikke kan dele handelisten med eieren.
+            Her ligger det også sjekk for at man ikke kan dele handelisten med eieren eller samme person to ganger.
           </td>
           <td>
-             Bare brukere som eier handelisten kan oppdatere hvem som skal kunne se den.
+             Bare brukere som eier handelisten kan oppdatere hvem som skal kunne se den.<br>
+             Også her ligger det sjekk for at man ikke kan dele med samme person to ganger og ikke med eieren
           </td>
           <td>
             Bare brukere som eier handelisten kan fjerne delte folk.
@@ -229,10 +230,10 @@
           <td>
             <table>
               <th>
-                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5e81f43d-b2df-45be-a349-de5f8e3d8d18" width="60" />
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/90bb76c0-6e7b-4bae-b722-8d5e268e0555" width="60" />
               </th>
               <th>
-                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/07b90565-1e37-436d-812c-8bcbdfb9be80" width="60" />
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2d4013d0-d452-4d50-841f-dcfd68d9fe54" width="60" />
               </th>
               <th>
                 <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/dac51ae5-5540-4e60-bdb5-f7a31f3c0a78" width="60" />
