@@ -10,3 +10,5 @@ Presentasjon:
 <!-- Egenvurdering -->
 5. Forklart hvilke problemer eg møtte på underveis.
 6. Forklara ka eg ville gjort annerledes neste gang
+
+https://app.kompetanseboka.no/minkompetanse/apprentices/56792/assignments/5560/tasks
