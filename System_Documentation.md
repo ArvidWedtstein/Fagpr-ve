@@ -342,13 +342,15 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
       <table>
         <tr>
           <th>Funksjoner</th>
-          <th>Beskrivelse</th>
+          <th colspan="2">
+            Beskrivelse
+          </th>
           <th>Kode</th>
           <th>Bilder</th>
         </tr>
         <tr>
           <td>Opprette ny handleliste</td>
-          <td>
+          <td colspan="2">
           <p>
             Her vil bruker kunne opprette ny handeliste. <br>
             Dette er løst med å kalle på en funksjon med -1 index for å lage ny rad. (Bilde 1).<br>
@@ -389,7 +391,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
         <tr>
           <td>Redigere handleliste</td>
-          <td>
+          <td colspan="2">
             Redigering av handeliste gjøres gjennom en dropdown meny (bilde 1).<br>
             Denne kaller på samme funksjon som når en lager ny handeliste, bare med indeksen til nåværende rad (bilde 2).<br>
             En modal med mulighet for å redigere navn og delte personer åpnes (se bilde 3). 
@@ -426,7 +428,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
         <tr>
           <td>Slette handeliste.</td>
-          <td>
+          <td colspan="2">
             Sletting av handeliste foregår gjennom en dropdown (samme som brukes for å redigere) (se bilde 1).<br>
             Delete knappen i dropdownen trigger en funksjon som ber brukeren bekrefte sletting av handelisten (for å unngå sletting med uhell) (se bilde 2).<br>
             Trykker brukeren ok, så slettes raden fra tabellen.
@@ -453,8 +455,46 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
           </td>
         </tr>
         <tr>
-          <td>Søkefelt</td>
+          <td>Dele handleliste</td>
+          <td colspan="2">
+          <p>
+            Deling av handleliste foregår gjennom redigerknappen i dropdownen, som åpner rediger modalen.<br />
+            Brukeren vil da få opp en grid som gir mulighet for å slette, legge til og redigere delte personer<br />
+            Griddens default knapp for å slette rader ble byttet ut med en større knapp for å enklere kunne trykke på den i mobilvisning (se kode bilde 1).<br>
+            Person lookupen er filtrert på personene som ikke ligger i handlelisten fra før eller eier den. Dette er gjort ved hjelp av en computed where clause. (se kode bilde 2 og 3)<br />
+            I tilleg så vil sql triggeren på tabellen hindre folk å legge til samme person to ganger eller eieren. Computed where clausen er bare der for å ikke gi brukeren mulighet til å gjøre uønskede handliger.
+          </p>
+          </td>
           <td>
+            <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c7b49d80-1e05-4bdf-aa90-acb2e913aaa9" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/d6ff7164-6208-4073-97ea-b5a963f60990" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/60bfedea-d1da-436f-9236-77aa5eadf7d3" width="60" />
+              </th>
+            </table>
+          </td>
+          <td>
+            <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/9f796cc9-9c7c-42cc-8cf6-51fc453fea31" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f4de393f-a479-4e1e-9016-dac557bf84fe" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7492dd00-063f-4b5b-be5e-e53d097b413f" width="60" />
+              </th>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>Søkefelt</td>
+          <td colspan="2">
             Til søkefelt brukte jeg SearchInput componenten til appframe rammeverket.<br>
             Når inputen i søkefeltet endres kjøres en funksjon som setter filterobject på søkekolonnen til handeliste datasourcen.
             Søkekolonnen er de relevante feltene joinet sammen til en string i MyShoppingLists viewet.
@@ -498,16 +538,37 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
     <table>
         <tr>
           <th>Funksjoner</th>
-          <th>Beskrivelse</th>
+          <th colspan="3">Beskrivelse</th>
           <th>Kode</th>
           <th>Bilder</th>
         </tr>
       <tr>
           <td>Legge til ny vare</td>
-          <td></td>
-          <td></td>
+          <td colspan="3">
+            Her vil bruker kunne opprette ny vare i handelisten sin. <br>
+            Dette er løst med å kalle på en funksjon med -1 index for å lage ny rad. (Bilde 1).<br>
+            Funksjonen setter da indeksen på datasourcen til indeksen fra parameteren og setter CreateNewRef verdien til true.<br>
+            Indeksen settes for å kunne redigere rett rad i modalen eller for at den ikke skal vise en annen verdi når en lager ny liste siden denne funksjonen brukes til å både opprette og redigere varer (bilde 2). <br>
+            CreateNewRef brukes for å justere på modal tittel og lagringsknappen avhengig om bruker skal opprette eller redigere (bilde 3).
+          </td>
+          <td>
+            <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5f0e7f03-09dd-4dc3-aa69-7a9f680df332" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/5de88d16-9bb0-47d9-b71b-9050d11c1235" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c633e5b0-2869-491e-ae82-c56124c2c8a1" width="60" />
+              </th>
+            </table>
+          </td>
           <td> 
             <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/ee6e7208-273a-4127-bdd3-cca0c0098a51" width="60" />
+              </th>
               <th>
                 <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/794e30d6-f025-4296-a0a2-8878ea04a12d" width="60" />
               </th>
@@ -528,8 +589,23 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
        <tr>
           <td>Opprette ny vare</td>
-          <td>Brukeren skal kunne opprette ny vare ved å trykke på "create new item" checkboksen i ny vare dialogen. Brukeren skal ha kunne skrive inn navnet på ønsket vare og så fortsette som vanlig. Varen skal da være tilgjengelig når brukeren legger til nye varer i senere tid.</td>
-          <td></td>
+          <td colspan="3">
+            Brukeren kan opprette ny vare ved å trykke på "create new item" checkboksen i ny vare dialogen.<br>
+            Brukeren kan da skrive inn navnet på ønsket vare og så fortsette som vanlig.<br>
+            Varen blir da da være tilgjengelig når brukeren legger til nye varer i senere tid.<br>
+            Det hele er løst på en litt "stygg" måte, men det funker. (se kode bilde 1)<br>
+            Etter at brukeren har trykket "opprett" i modalen, så kjøres funksjonen som oppretter nytt item, returnerer dette, og så legger den til som vare i handelisten. (se kode bilde 2).
+          </td>
+          <td>
+            <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/4fdc45c9-a168-41ca-bffc-48a7ccdb16fb" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/0f33e90e-31fc-44ff-84c4-ffb22c4eb4b4" width="60" />
+              </th>
+            </table>
+          </td>
           <td> 
             <table>
               <th>
@@ -546,8 +622,26 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
       <tr>
           <td>Redigere vare</td>
-          <td>Brukeren skal kunne redigere antall, vare og enhet ved redigering av varen.</td>
-          <td></td>
+          <td colspan="3">
+            Brukeren kan redigere antall, vare og enhet ved redigering av varen.<br>
+            Da kjøres samme funksjon for å åpne modal til å redigere varen med radens index (se kode bilde 1).<br>
+            Funksjonen setter da indeksen på datasourcen til indeksen fra parameteren og setter CreateNewRef verdien til false.<br>
+            Indeksen settes for å kunne redigere rett rad i modalen (se kode bilde 2). <br>
+            CreateNewRef brukes for å justere på modal tittel og lagringsknappen avhengig om bruker skal opprette eller redigere (bilde 3).
+          </td>
+          <td>
+            <table>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/f16638c5-00c4-4a6c-8f65-9db8fd77f56d" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/51ba09eb-3dd3-4261-9f83-f32c8462c4d6" width="60" />
+              </th>
+              <th>
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/96589bec-25ec-4469-a99b-d921e07d313c" width="60" />
+              </th>
+            </table>
+          </td>
           <td> 
             <table>
               <th>
@@ -565,9 +659,9 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
             </table>
           </td>
         </tr>
-      <tr>
+        <tr>
           <td>Slette vare</td>
-          <td>
+          <td colspan="3">
              Sletting av vare foregår gjennom en dropdown (samme som brukes for å redigere) (se bilde 1).<br>
             Delete knappen i dropdownen trigger en funksjon som ber brukeren bekrefte sletting av varen (for å unngå sletting med uhell) (se bilde 2).<br>
             Trykker brukeren ok, så slettes raden fra tabellen.
@@ -595,7 +689,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
       <tr>
           <td>Krysse ut vare</td>
-          <td>
+          <td colspan="3">
             Utkryssing av varer skjer gjennom checkbox input som trigger checkItem funksjonen (se bilde 1).<br>
             Funksjonen sjekker om resten av varene i kategorien også er huket av, vis dette skulle være tilfellet, så slås kategorien sammen (se bilde 2)
           </td>
@@ -625,7 +719,7 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         </tr>
          <tr>
           <td>Søkefelt</td>
-          <td>
+          <td colspan="3">
             Til søkefelt brukte jeg SearchInput componenten til appframe rammeverket (se bilde 1).<br>
             Når inputen i søkefeltet endres kjøres en funksjon som setter filterobject på søkekolonnen til handeliste datasourcen. (se bilde 2)<br>
             Søkekolonnen er de relevante feltene fra Goods tabellen joinet sammen til en string som en computed column (se bilde 3).<br>
