@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/ArvidWedtstein/Appex-Tournaments">
-    <img src="https://github.com/ArvidWedtstein/Appex-Tournaments/frontend/public/images/braggets.PNG" alt="Logo" width="400" height="300">
+  <a href="https://github.com/ArvidWedtstein/Fagproove">
+    <img src="https://content.energage.com/company-images/SE45893/SE45893_logo_orig.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">System Dokumentasjon</h3>
@@ -17,9 +17,6 @@
     <b>Table of Contents / Innhold</b>
   </summary>
   <ol>
-    <li>
-      <a href="#oversikt">Oversikt</a>
-    </li>
     <li>
       <a href="#funksjonelle-krav">Funksjonelle krav</a>
     </li>
