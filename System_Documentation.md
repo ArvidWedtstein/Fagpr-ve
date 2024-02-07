@@ -685,6 +685,13 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
         Gikk litt utover det jeg hadde planlagt og la til søkefelt for handelister og collapsing av kategorier inne i selve handelisten
       </p>
     </li>
+    <li>
+      <p>
+        Planen var egentlig å ha en autocomplete / freesolo lookup for å lage nye varer som ikke eksisterte fra før.<br>
+        Fikk ikke ODataLookup til å fungere som jeg ville, så løsningen ble å toggle mellom et vanlig input felt og lookupen.
+        Like fortsatt ikkje den løsningen 100%, men følte det va bedre enn å begynna med slappa inn mye kode i hoved vue filen, siden eg ikke kunne laga components. 
+      </p>
+    </li>
   </ol>
  
 <hr />
