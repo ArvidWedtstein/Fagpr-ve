@@ -1,4 +1,16 @@
-# System Dokumentasjon
+<div align="center">
+  <a href="https://github.com/ArvidWedtstein/Appex-Tournaments">
+    <img src="https://github.com/ArvidWedtstein/Appex-Tournaments/frontend/public/images/braggets.PNG" alt="Logo" width="400" height="300">
+  </a>
+
+  <h3 align="center">System Dokumentasjon</h3>
+
+  <p align="center">
+    <b>Test Fagprøve</b>
+    <br />
+    <sub>01.02.24 - 08.02.24</sub>
+  </p>
+</div>
       
 <details open>
   <summary>
@@ -51,13 +63,6 @@
   </ol>
 </details>
 
-<details open>
-  <summary>
-    <h2>Oversikt</h2>
-  </summary>
-
-<hr>
-</details>
 <details open>
   <summary>
     <h2>Funksjonelle krav</h2>
