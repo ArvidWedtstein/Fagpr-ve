@@ -8,17 +8,19 @@
   <p align="center">
     <b>Test Fagprøve</b>
     <br />
-    <sub>01.02.24 - 08.02.24</sub>
+    <sub>31.01.24 - 08.02.24</sub>
   </p>
 </div>
+
+
       
-<details open>
+<details>
   <summary>
-    <b>Table of Contents / Innhold</b>
+    <b>Table of Contents</b>
   </summary>
   <ol>
     <li>
-      <a href="#funksjonelle-krav">Funksjonelle krav</a>
+      <a href="#info">Info</a>
     </li>
     <li>
       <a href="#teknologier">Teknologier</a>
@@ -62,12 +64,17 @@
 
 <details open>
   <summary>
-    <h2>Funksjonelle krav</h2>
+    <h2>Info</h2>
   </summary>
     
-- Mulighet for registrering og innlogging for brukere.
-- Støtte for flere lister.
-- Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
+  Fagprøve oppgave.
+  
+  Målet var å lage en Handeliste App med følgende krav:
+  - Lage en handeliste app med registrering og innlogging for brukere.
+  - Må være flere lister.
+  - Må være lett for brukeren å vite hva som er handlet, og hva som gjenstår.
+  - Fritekstsøk (Denne kom som scope endring på 3. dag av prøven)
+
 <hr>
 </details>
 <details open>
