@@ -231,10 +231,10 @@ Bruksanvisning finner du her: [How i use this app?](https://github.com/ArvidWedt
           <td>
             <table>
               <th>
-                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/90bb76c0-6e7b-4bae-b722-8d5e268e0555" width="60" />
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/c62d786e-7093-4908-a4c7-d7cb77cba44c" width="60" />
               </th>
               <th>
-                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/2d4013d0-d452-4d50-841f-dcfd68d9fe54" width="60" />
+                <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/8814c7ee-2cfb-489a-9eb1-dc44f2b80696" width="60" />
               </th>
               <th>
                 <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/dac51ae5-5540-4e60-bdb5-f7a31f3c0a78" width="60" />
