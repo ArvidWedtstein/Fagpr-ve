@@ -898,13 +898,16 @@ For å sikre kvalitet på appen(e), har jeg laget en [Testrapport](https://githu
       <a href="#">Sitesetup</a>
     </li>
     <li>
-      <a href="#">Sitesetup</a>
-    </li>
-    <li>
       <a href="#">Omega GPT</a>
     </li>
     <li>
+      <a href="https://stackoverflow.com/">Stackoverflow</a>
+    </li>
+    <li>
       <a href="#">Code search</a>
+    </li>
+    <li>
+      <a href="https://www.figma.com/file/Tx8VgFlesvwddki1t5iBjc/Handleliste?type=design&node-id=0-1&mode=design&t=7J7g9XgK7WVPyPrd-0">Figma</a>
     </li>
     <li>
       Dennis (Erstattning for Omegas mangel på docs)
