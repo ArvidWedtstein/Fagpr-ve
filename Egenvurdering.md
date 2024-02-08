@@ -23,7 +23,7 @@
       <a href="#oppsummering">Oppsummering</a>
       <ul>
         <li>
-          <a href="#valg-av-fremgangsmåte">Valg av fremgangsmåte</a>
+          <a href="#egenevaluering-av-fremgangsmåte">Egenevaluering av fremgangsmåte</a>
         </li>
       </ul>
     </li>
@@ -31,7 +31,7 @@
       <a href="#utført-arbeid-under-fagprøven">Utført arbeid under fagprøven</a>
       <ul>
         <li>
-          <a href="#eventuelle-utfordringer">Eventuelle Utfordringer</a>
+          <a href="#utfordringer">Utfordringer</a>
         </li>
       </ul>
     </li>
@@ -49,19 +49,23 @@
 Alt i alt så har ting egentlig gått ganske greit.<br>
 Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.
 
-### Valg av fremgangsmåte:
+### Egenevaluering av fremgangsmåte:
 
 Laget en solid [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for kossen eg tenkte å utføra oppgavå.<br />
 
+Syns fremgangsmåten min var helt ok. <br>
+Kunne perfektsjonert testrapporten, dokumentasjonen og brukerveiledningen første gang, så hadde jeg ikke måttet finjustere den i etterkant.
 
 ## Utført arbeid under fagprøven
 
 Gjennomføringen av oppgaven gikk stort sett bra. <br>
 Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte litt for lite tid til testing. 
 
-Progress timeline: [Progress?](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
+[Progressjon under fagprøven / utført arbeid under fagprøven](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
 
-### Eventuelle Utfordringer
+Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
+
+### Utfordringer
 
  <ol>
     <li>
