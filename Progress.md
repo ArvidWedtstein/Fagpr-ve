@@ -50,7 +50,16 @@
     <sub><sup>(31.01)</sup></sub>
   </summary>
 
-  Laga [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md).
+  <table>
+    <tr>
+      <th colspan="3">Beskrivelse</th>
+      <th>Bilde(r)</th>
+    </tr>
+    <tr>
+      <td colspan="3">Laga <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md" target="_blank">plan</a></td>
+      <td></td>
+    </tr>
+  </table>
 </details>
 
 <details open>
