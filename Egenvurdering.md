@@ -48,7 +48,7 @@
 
 Alt i alt så har ting egentlig gått ganske greit.<br>
 Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.<br>
-Kunne lest meg mer opp på ting som sikkerhet. Alt i alt føler jeg meg tilfreds med min innsats og resultatene av fagprøven. Jeg klarte å demonstrere mine ferdigheter og kunnskaper på en tilfredsstillende måte, og jeg opprettholdt et høyt nivå av nøyaktighet og kvalitet i arbeidet mitt. Jeg tror at min grundige planlegging, evne til å håndtere utfordringer og samarbeidsevner var nøkkelfaktorer for min suksess under fagprøven.
+Kunne lest meg mer opp på ting som sikkerhet.
 
 ### Egenevaluering av fremgangsmåte:
 
