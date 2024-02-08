@@ -21,14 +21,25 @@
   <ol>
     <li>
       <a href="#oppsummering">Oppsummering</a>
+      <ul>
+        <li>
+          <a href="#valg-av-fremgangsmåte">Valg av fremgangsmåte</a>
+        </li>
+      </ul>
     </li>
     <li>
-      <a href="#oppsummering">Utført arbeid under fagprøven</a>
+      <a href="#utført-arbeid-under-fagprøven">Utført arbeid under fagprøven</a>
       <ul>
         <li>
           <a href="#eventuelle-utfordringer">Eventuelle Utfordringer</a>
         </li>
       </ul>
+    </li>
+    <li>
+      <a href="#avvik-i-løsning-i-forhold-til-plan-eller-oppdrag">Avvik i løsning i forhold til plan eller oppdrag</a>
+    </li>
+    <li>
+      <a href="#hva-jeg-ville-gjort-annerledes-eller-bedre">Hva jeg ville gjort annerledes eller bedre</a>
     </li>
   </ol>
 </details>
@@ -121,30 +132,30 @@ Progress timeline: [Progress?](https://github.com/ArvidWedtstein/Fagproove/blob/
     </li>
   </ol>
 
-## Avvik i løsning i forhold til plan eller oppdrag?
+## Avvik i løsning i forhold til plan eller oppdrag
 
- <ol>
-    <li>
-      <p>
-        Ble aldri helt fornøyd med layoutet jeg planla på planleggingsdagen, så endte opp med å komme opp med ett nytt midt på natten på dag 5. <br>
-        Dette er bare endringer i layout, så testrapport bilder kan delvis vise gammel layout til tider.
-      </p>
-    </li>
-    <li>
-      <p>
-        Gikk litt utover det jeg hadde planlagt og la til søkefelt for handelister og collapsing av kategorier inne i selve handelisten
-      </p>
-    </li>
-    <li>
-      <p>
-        Planen var egentlig å ha en autocomplete / freesolo lookup for å lage nye varer som ikke eksisterte fra før.<br>
-        Fikk ikke ODataLookup til å fungere som jeg ville, så løsningen ble å toggle mellom et vanlig input felt og lookupen.
-        Like fortsatt ikkje den løsningen 100%, men følte det va bedre enn å begynna med slappa inn mye kode i hoved vue filen, siden eg ikke kunne laga components. 
-      </p>
-    </li>
-  </ol>
+<ol>
+  <li>
+    <p>
+      Ble aldri helt fornøyd med layoutet jeg planla på planleggingsdagen, så endte opp med å komme opp med ett nytt midt på natten på dag 5. <br>
+      Dette er bare endringer i layout, så testrapport bilder kan delvis vise gammel layout til tider.
+    </p>
+  </li>
+  <li>
+    <p>
+      Gikk litt utover det jeg hadde planlagt og la til søkefelt for handelister og collapsing av kategorier inne i selve handelisten
+    </p>
+  </li>
+  <li>
+    <p>
+      Planen var egentlig å ha en autocomplete / freesolo lookup for å lage nye varer som ikke eksisterte fra før.<br>
+      Fikk ikke ODataLookup til å fungere som jeg ville, så løsningen ble å toggle mellom et vanlig input felt og lookupen.
+      Like fortsatt ikkje den løsningen 100%, men følte det va bedre enn å begynna med slappa inn mye kode i hoved vue filen, siden eg ikke kunne laga components. 
+    </p>
+  </li>
+</ol>
 
-## Ka eg ville gjort annerledes eller bedre
+## Hva jeg ville gjort annerledes eller bedre
 
 1. Ville lagt til veiledning for innlogging og registrering
 2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
