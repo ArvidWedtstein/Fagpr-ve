@@ -47,6 +47,7 @@
 ## Oppsummering
 
 Alt i alt så har det egentlig gått ganske greit.<br>
+Kunne ha utdypa meg mer her og der da.
 Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.<br>
 Kunne forklart mer når Vidar spurte om opphavsrett og inkludert bootstrap opphavsrett for eksempel.<br>
 Kunne ha gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
@@ -70,9 +71,6 @@ Gjennomføringen av oppgaven gikk stort sett bra. <br>
 Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte litt for lite tid til testing. 
 
 [Progressjon under fagprøven / utført arbeid under fagprøven](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
-
-Kunne ha vært mer våken under presentasjonen.<br>
-Vidar pekte ut at counteren i footeren ikke stemte. Da jeg sjekket opp dette i etterkant så stemte counteren.
 
 ### Utfordringer
 
@@ -109,7 +107,7 @@ Vidar pekte ut at counteren i footeren ikke stemte. Da jeg sjekket opp dette i e
       <p>
         Hadde under utviklingen problem med at "0 records" blei affecta ved update.<br>
         Etter en liten teams gjennomgang med Tor og Mr Hoff, <br>
-        så viste det seg at eg e blind og ikke klarte å se at det sto at an bruke view istedenfor atbl.
+        så viste det seg at eg e blind og ikke klarte å se at det sto at an bruke view istedenfor atbl.<br>
         Siå atbv'en kom med "WHERE 1=2" som default, så kunne det ikkje funka.
       </p>
       <table>
@@ -162,17 +160,20 @@ Vidar pekte ut at counteren i footeren ikke stemte. Da jeg sjekket opp dette i e
   <li>
     <p>
       Planen var egentlig å ha en autocomplete / freesolo lookup for å lage nye varer som ikke eksisterte fra før.<br>
-      Fikk ikke ODataLookup til å fungere som jeg ville, så løsningen ble å toggle mellom et vanlig input felt og lookupen.
-      Like fortsatt ikkje den løsningen 100%, men følte det va bedre enn å begynna med slappa inn mye kode i hoved vue filen, siden eg ikke kunne laga components. 
+      Fikk ikke ODataLookup til å fungere som jeg ville, så løsningen ble å toggle mellom et vanlig input felt og lookupen.<br>
+      Like fortsatt ikkje den løsningen 100%, men følte det va bedre enn å begynna med slappa inn mye kode i hoved vue filen, siden eg ikke kunne laga components.
     </p>
   </li>
 </ol>
 
 ## Ka kunne eg gjort annerledes eller bedre
 
-1. Ville lagt til veiledning for innlogging og registrering
+1. Ville lagt til veiledning for innlogging og registrering / gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
 2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
 3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme medge erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
 4. Hadde lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
+5. Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
+6. Kunne nevnt bootstrap opphavsrett når Vidar spurte om opphavsrett under presentasjonen.
+7. Kunne ha vært mer våken under presentasjonen
 
 
