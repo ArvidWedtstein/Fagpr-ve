@@ -49,9 +49,8 @@
     <h2>Onsdag</h2> 
     <sub><sup>(31.01)</sup></sub>
   </summary>
-  <p>
-    Laget [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for utviklingen
-  </p>
+
+  Laget [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for utviklingen
 </details>
 
 <details open>
@@ -162,7 +161,9 @@
       <th>Bilde(r)</th>
     </tr>
     <tr>
-      <td colspan="3">Laget [testrapport](https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md) og testet løsningen</td>
+      <td colspan="3">
+        Laget <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md" target="_blank">testrapport</a> og testet løsningen
+      </td>
       <td>
         <img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/ac8209db-456a-43ea-96d4-94a5093482c4">
       </td>
@@ -188,7 +189,7 @@
       </td>
     </tr>
     <tr>
-      <td colspan="3">Begynt på [wiki](https://github.com/ArvidWedtstein/Fagproove/wiki) og [docs](https://github.com/ArvidWedtstein/Fagproove/blob/main/System_Documentation.md)</td>
+      <td colspan="3">Begynt på <a href="https://github.com/ArvidWedtstein/Fagproove/wiki" target="_blank">wiki</a> og <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/System_Documentation.md" target="_blank">docs</a></td>
       <td></td>
     </tr>
     <tr>
@@ -212,11 +213,11 @@
       <th>Bilde(r)</th>
     </tr>
     <tr>
-      <td colspan="3">Finjustert på [system dokumentasjon](https://github.com/ArvidWedtstein/Fagproove/blob/main/System_Documentation.md) og [testrapport](https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md)</td>
+      <td colspan="3">Finjustert på <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/System_Documentation.md" target="_blank">system dokumentasjon</a> og <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/Test_Report.md" target="_blank">testrapport</a></td>
       <td></td>
     </tr>
     <tr>
-      <td colspan="3">Laget en [presentasjon](https://omegaoffice-my.sharepoint.com/:p:/g/personal/arvid_wedtstein_omega365_com/EQXcYrracTdDkuHtCyjOdD8BTkAfLmdTyT0xFoIx3rsawA?e=nu2b1s) / plan om ka eg ska visa på torsdag</td>
+      <td colspan="3">Laget en <a href="https://omegaoffice-my.sharepoint.com/:p:/g/personal/arvid_wedtstein_omega365_com/EQXcYrracTdDkuHtCyjOdD8BTkAfLmdTyT0xFoIx3rsawA?e=nu2b1s" target="_blank">presentasjon</a> / plan om ka eg ska visa på torsdag</td>
       <td></td>
     </tr>
   </table>
@@ -238,7 +239,7 @@
       <td></td>
     </tr>
     <tr>
-      <td colspan="3">Skrevet [egenvurdering](https://github.com/ArvidWedtstein/Fagproove/blob/main/Egenvurdering.md)</td>
+      <td colspan="3">Skrevet <a href="https://github.com/ArvidWedtstein/Fagproove/blob/main/Egenvurdering.md" target="_blank">egenvurdering</a></td>
       <td></td>
     </tr>
   </table>
