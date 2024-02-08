@@ -56,6 +56,12 @@ Laget en solid [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/READ
 Syns fremgangsmåten min var helt ok. <br>
 Kunne perfektsjonert testrapporten, dokumentasjonen og brukerveiledningen første gang, så hadde jeg ikke måttet finjustere den i etterkant.
 
+Vurderte å bruka R4 Web i starten sammen med npm pakkene til Ølen Betong og react siden jeg har mest kjennskap til det fra før,<br>
+men siden node pakkene til Ølen Betong var begrenset til .obet.no domenet og eg fekk beskjed om at det ikke var greit å laga fagprøven i kundens devmiljø så ble det uaktuelt.<br>
+Så andrevalget blei Omega 365 (NT), selv om jeg hadde begrenset kunnskap til det.<br>
+Dennis blei så å sei erstattning for det snippets, code search eller sitesetup ikke hadde av dokumentasjon (eksempel: disabling av filter på kolonne i datagrid komponenten).
+
+
 ## Utført arbeid under fagprøven
 
 Gjennomføringen av oppgaven gikk stort sett bra. <br>
@@ -164,6 +170,6 @@ Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende 
 1. Ville lagt til veiledning for innlogging og registrering
 2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
 3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme medge erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
-4. Hadee lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
+4. Hadde lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
 
 
