@@ -46,15 +46,16 @@
 
 ## Oppsummering
 
-Alt i alt så har ting egentlig gått ganske greit.<br>
-Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.<br>
-Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
+Alt i alt så har det egentlig gått ganske greit.<br>
+Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.<br>
+Kunne forklart mer når Vidar spurte om opphavsrett og inkludert bootstrap opphavsrett for eksempel.<br>
+Kunne ha gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
 
 ### Egenevaluering av fremgangsmåte:
 
 Laget en solid [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for kossen eg tenkte å utføra oppgavå.<br />
 
-Syns fremgangsmåten min var helt ok. <br>
+Syns fremgangsmåten min var helt ok.<br>
 Kunne perfektsjonert testrapporten, dokumentasjonen og brukerveiledningen første gang, så hadde jeg ikke måttet finjustere den i etterkant.
 
 Vurderte å bruka R4 Web i starten sammen med npm pakkene til Ølen Betong og react siden jeg har mest kjennskap til det fra før,<br>
