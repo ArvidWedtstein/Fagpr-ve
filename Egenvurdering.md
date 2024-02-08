@@ -170,7 +170,7 @@ Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte li
 
 1. Ville lagt til veiledning for innlogging og registrering / gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
 2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
-3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme medge erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
+3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme mengde erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
 4. Hadde lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
 5. Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
 6. Kunne nevnt bootstrap opphavsrett når Vidar spurte om opphavsrett under presentasjonen.
