@@ -39,7 +39,7 @@
       <a href="#avvik-i-løsning-i-forhold-til-plan-eller-oppdrag">Avvik i løsning i forhold til plan eller oppdrag</a>
     </li>
     <li>
-      <a href="#ka-kunne-jeg-gjort-annerledes-eller-bedre">Hva jeg ville gjort annerledes eller bedre</a>
+      <a href="#ka-kunne-jeg-gjort-annerledes-eller-bedre">Ka kunne eg gjort annerledes eller bedre</a>
     </li>
   </ol>
 </details>
