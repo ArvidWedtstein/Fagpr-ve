@@ -20,60 +20,98 @@
   </summary>
   <ol>
     <li>
-      <a href="#info">Info</a>
-    </li>
-    <li>
-      <a href="#teknologier">Teknologier</a>
-    </li>
-    <li>
-      <a href="#teknologier">Arkitektur</a>
-       <ul>
-        <li>
-          <a href="#tabeller">Tabeller</a>
-          <ul>
-            <li>
-              <a href="#sikkerhet-i-tabeller">Sikkerhet i Tabeller</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#views">Views</a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#sikkerhet">Sikkerhet</a>
-    </li>
-    <li>
-      <a href="#testing">Testing</a>
-    </li>
-    <li>
-      <a href="#grensesnittbeskrivelse">Grensesnittbeskrivelse</a>
-    </li>
-    <li>
-      <a href="#hindringer-under-utviklingen">Hindringer under utviklingen</a>
-    </li>
-    <li>
-      <a href="#avvik-fra-plan">Avvik fra plan</a>
-    </li>
-    <li>
-      <a href="#kilder">Kilder / Ressurser</a>
+      <a href="#oppsummering">Oppsummering</a>
     </li>
   </ol>
 </details>
 
 ## Oppsummering
 
-## Eget arbeid
+### Valg av fremgangsmåte:
+
+Lagde en god [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for kossen eg tenkte å utføra oppgavå.<br />
+Begynte så å sette opp appene og tabellene, med hensyn for sikkerhet.
 
 Syns eget arbeid egentlig gikk ganske bra.<br>
-Klarte stortsett å holda meg til tidsplanen. 
 
 
 ## Utført arbeid under fagprøven
 
+Gjennomføringen av oppgaven gikk stort sett bra. <br>
+Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte litt for lite tid til testing. 
 
 Progress timeline: [Progress?](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
+
+### Eventuelle Utfordringer
+
+ <ol>
+    <li>
+      <p>
+        Under utviklingen så møtte jeg på en NT bug der jeg ikke fikk lagt til custom components i koden. (Disallowed MIME type error) (se bilde 1)<br />
+        Dette resulterte i at all koden måtte ligge i samme filen. Har prøvd å holde orden alikevel ved å markere start og slutt på det som ellers hadde blitt en component (se bilde 3)
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/bf3a069d-426a-4754-9824-80efc8b597d2" width="60"></th>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/af97cd91-8b90-4491-8e62-49795f95f486" width="60"></th>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/92b6bbd7-289d-4d28-9208-1715400fb68b" width="60"></th>
+      </table>    
+    </li>
+    <li>
+      <p>
+        Fant bug i ODataLookup. På mobil så bytter den til MobileLookup. MobileLookup render ikke ikke v-slot inne i ocolumn, så derfor er bildene bare i tekst på mobil (se bilde 1)<br>
+        Løsningen her var å bare fjerne kolonnen for bilde når mobile view er aktiv ved hjelp av isMobile (se bilde 2). 
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/e8dec4d3-ec48-456e-9672-ecd2fdff2346" width="60"></th>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6800d777-9f58-4d25-b961-8b8ae7d8d186" width="60"></th>
+      </table>    
+    </li>
+    <li>
+      <p>
+        NT i training har i seg sjøl vært en stor hindring.<br>
+        Å måtta publisera hver einaste gang for å se hver bittelille endring, e litt for mye forlangt.<br>
+        Føle eg e bedre off med å bruka R4 Web og bare importa noen libraries neste gang istedenfor.
+      </p>
+    </li>
+    <li>
+      <p>
+        Hadde under utviklingen problem med at "0 records" blei affecta ved update.<br>
+        Etter en liten teams gjennomgang med Tor og Mr Hoff, <br>
+        så viste det seg at eg e blind og ikke klarte å se at det sto at an bruke view istedenfor atbl.
+        Siå atbv'en kom med "WHERE 1=2" som default, så kunne det ikkje funka.
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/41984788-66c4-4755-b1a6-da0c55806a26" width="60"></th>
+      </table> 
+    </li>
+    <li>
+      <p>
+        Har hatt litt problemer med ODataGrid componenten.<br/>
+        Dialogen for å oppretta ny row forblir åpen når modalen lukkes og lukker da åpnet opp igjen vis man redigerer en annen handeliste
+      </p>
+      <table>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/6cb76787-d89f-4607-99fa-bcb2c8396980" width="60"></th>
+        <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/172f11f8-9c9d-499c-9625-65178fde918e" width="60"></th>
+      </table> 
+    </li>
+    <li>
+      <p>
+        Hadde også delvis publiseringsproblemer (i tillegg til å måtte publisere hver gang)<br>
+        Såg ut som Appframe ikkje klarte å setta versjon sjøl til tider.<br>
+        Va visst et common problem, så endte opp med å bare manuelt updata versjonsnummeret noen hakk opp fra det an va tidligere
+      </p>
+      
+  ```sql
+  UPDATE V
+  SET V.Version = 42069
+  FROM dbo.stbl_o365_apps AS V
+  WHERE V.PrimKey = '2056efbd-687c-4a99-9419-cf89ba6f2393'
+  ```
+  <table>
+    <th><img src="https://github.com/ArvidWedtstein/Fagproove/assets/71834553/7d391b1d-0d30-4dce-a51f-59d9b0b54377" width="60"></th>
+  </table>
+    </li>
+  </ol>
 
 ## Avvik i løsning i forhold til plan eller oppdrag?
 
@@ -98,8 +136,11 @@ Progress timeline: [Progress?](https://github.com/ArvidWedtstein/Fagproove/blob/
     </li>
   </ol>
 
-## Hva kunne vært gjort annerledes eller bedre?
+## Ka eg ville gjort annerledes eller bedre
 
-Kunne ha hatt mer kontroll på koss appframe faktisk fungere.
+1. Ville lagt til veiledning for innlogging og registrering
+2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
+3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme medge erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
+4. Hadee lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
 
 
