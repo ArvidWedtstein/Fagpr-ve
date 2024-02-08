@@ -44,7 +44,7 @@
 </details>
 
 
-<details>
+<details open>
   <summary>
     <h2>Onsdag</h2> 
     <sub><sup>(31.01)</sup></sub>
@@ -53,7 +53,8 @@
     Laget [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for utviklingen
   </p>
 </details>
-<details>
+
+<details open>
   <summary>
     <h2>Torsdag</h2> 
     <sub><sup>(01.02)</sup></sub>
@@ -102,7 +103,7 @@
   </table>
 </details>
 
-<details>
+<details open>
   <summary>
     <h2>Fredag</h2> 
     <sub><sup>(02.02)</sup></sub>
@@ -148,7 +149,8 @@
     </tr>
   </table>
 </details>
-<details>
+
+<details open>
   <summary>
     <h2>Mandag</h2> 
     <sub><sup>(05.02)</sup></sub>
@@ -167,7 +169,8 @@
     </tr>
   </table>
 </details>
-<details>
+
+<details open>
   <summary>
     <h2>Tirsdag</h2> 
     <sub><sup>(06.02)</sup></sub>
@@ -196,7 +199,8 @@
     </tr>
   </table>
 </details>
-<details>
+
+<details open>
   <summary>
     <h2>Onsdag</h2> 
     <sub><sup>(07.02)</sup></sub>
@@ -217,7 +221,8 @@
     </tr>
   </table>
 </details>
-<details>
+
+<details open>
   <summary>
     <h2>Torsdag</h2> 
     <sub><sup>(08.02)</sup></sub>
