@@ -22,17 +22,25 @@
     <li>
       <a href="#oppsummering">Oppsummering</a>
     </li>
+    <li>
+      <a href="#oppsummering">Utført arbeid under fagprøven</a>
+      <ul>
+        <li>
+          <a href="#eventuelle-utfordringer">Eventuelle Utfordringer</a>
+        </li>
+      </ul>
+    </li>
   </ol>
 </details>
 
 ## Oppsummering
 
+Alt i alt så har ting egentlig gått ganske greit.<br>
+Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.
+
 ### Valg av fremgangsmåte:
 
-Lagde en god [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for kossen eg tenkte å utføra oppgavå.<br />
-Begynte så å sette opp appene og tabellene, med hensyn for sikkerhet.
-
-Syns eget arbeid egentlig gikk ganske bra.<br>
+Laget en solid [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for kossen eg tenkte å utføra oppgavå.<br />
 
 
 ## Utført arbeid under fagprøven
