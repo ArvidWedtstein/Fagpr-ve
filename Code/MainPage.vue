@@ -1,14 +1,15 @@
-
 <template>
   <ONavbar></ONavbar>
 
   <ORowContainer appContainer style="margin-bottom: 80px">
+    <!-- Modal Start -->
     <OModal ref="vModalRef" @hidden="resetModal">
       <div class="modal-dialog">
-        <form class="modal-content" @submit.prevent="saveShoppingListItem">
+        <form class="modal-content" @submit.prevent="saveShoppingList">
           <div class="modal-header">
             <h5 class="modal-title">
-              {{ vCreateNewRef ? $t("New Item") : $t("Edit Item") }}
+              {{ $t(vCreateNewRef ? 'New' : 'Edit') }}
+              {{ $t("Shopping List") }}
             </h5>
             <button
               type="button"
@@ -18,108 +19,95 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="new-item-checkbox"
-                v-model="vNewItemCheckRef"
-              />
-              <label class="form-check-label" for="new-item-checkbox">
-                {{ $t('Create New Item') }}
-              </label>
-            </div>
             <div class="row">
               <OFormControl
                 class="col-12"
-                :title="$t('Item:')"
-                for="item-field"
+                :title="$t('Name:')"
+                for="name-field"
               >
                 <input
-                  type="text"
-                  v-if="vNewItemCheckRef"
-                  v-model="vItemNameRef"
-                  class="form-control form-control-lg"
-                />
-                <ODataLookup
-                  :dataObject="dsGoodsLkp"
-                  v-else
                   required
-                  title=""
-                  v-model="vItemNameRef"
-                  focusField="Name"
-                  class="form-select form-select-lg"
-                  :bind="
-                    (sel) => {
-                      vItemNameRef = sel.Name;
-                      vItem_IDRef = sel.ID;
-                    }
-                  "
-                >
-                  <OColumn
-                    v-if="!isMobile"
-                    field="ImageUrl"
-                    width="40"
-                    headerName=""
-                    v-slot="{ row }"
-                  >
-                    <img
-                      loading="lazy"
-                      style="width: 1.5rem; height: 1.5rem"
-                      :src="row.ImageUrl"
-                      class="rounded-circle img-fluid"
-                    />
-                  </OColumn>
-                  <OColumn field="Name" width="400" />
-                </ODataLookup>
+                  id="name-field"
+                  name="name"
+                  class="form-control form-control-lg"
+                  :title="$t('Name')"
+                  :value="dsShoppingLists.current.Name"
+                />
               </OFormControl>
             </div>
             <div class="row">
               <OFormControl
-                class="col-8"
-                :title="$t('Amount:')"
-                for="amount-field"
+                v-if="!vCreateNewRef"
+                class="col-12"
+                :title="$t('Shared With:')"
               >
-                <div class="input-group input-group-lg">
-                  <input
-                    type="text"
-                    id="amount-field"
-                    name="amount"
-                    v-model.number="vAmountRef"
-                    class="form-control"
-                  />
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                    @click="alterAmount(-1)"
+                <ODataGrid
+                  :dataObject="dsSharedWith"
+                  hideMultiselectColumn
+                  hideGridMenu
+                  noFooter
+                  hideActionColumn
+                >
+                  <OColumn
+                    field="UpdatedBy_ID"
+                    width="40"
+                    headerName=""
+                    disableMenu
+                    :filter="false"
                   >
-                    <i class="bi bi-dash-lg"></i>
-                  </button>
-                  <button
-                    class="btn btn-secondary"
-                    type="button"
-                    @click="alterAmount(+1)"
+                    <template #default="{ row }">
+                      <div class="profile-image-wrapper" v-if="!row.isError && !row.isNewRecord">
+                        <PersonImage
+                          :personId="row.SharedUser_ID"
+                          class="profile-image rounded-circle img-fluid"
+                        />
+                      </div>
+                    </template>
+                  </OColumn>
+
+                  <OColumn
+                    field="Name"
+                    width="240"
+                    editable
+                    sortable
+                    required
+                    flexWidth="90"
+                    v-slot:editor="{ row }"
                   >
-                    <i class="bi bi-plus-lg"></i>
-                  </button>
-                </div>
-              </OFormControl>
-              <OFormControl class="col-4" :title="$t('Unit:')" for="unit-field">
-                <input
-                  type="text"
-                  id="unit-field"
-                  name="unit"
-                  class="form-control form-control-lg"
-                  list="list-units"
-                  v-model="vUnitRef"
-                />
-                <datalist id="list-units">
-                  <option>Piece</option>
-                  <option>Sack</option>
-                  <option>Liter</option>
-                  <option>Bag</option>
-                  <option>Slice</option>
-                </datalist>
+                    <OPersonsLookup
+                      class="form-select"
+                      title="Persons"
+                      :whereClause="computedPersonsLkpWhereClause"
+                      :bind="
+                        (sel) => {
+                          row.SharedUser_ID = sel.ID;
+                          row.Name = sel.Name;
+                        }
+                      "
+                      v-model="row.Name"
+                    ></OPersonsLookup>
+                  </OColumn>
+                  <OColumn
+                    field="ID"
+                    width="40"
+                    disableMenu
+                    headerName=""
+                    :filter="false"
+                  >
+                    <template #default="{ row }">
+                      <button
+                        v-if="(!row.isDirty && !row.isError && !row.isNewRecord) || row.isDeleting"
+                        type="button"
+                        :style="{ 'display': !row.hasChanges && !row.error && !row.isNewRecord ? '' : 'none' }"
+                        class="btn btn-sm btn-danger bg-danger"
+                        @click="dsSharedWith.deleteItem(row)"
+                      >
+                        <i class="bi bi-trash"></i>
+                        <span class="visually-hidden">{{ $t("Delete") }}</span>
+                      </button>
+                    </template>
+                  </OColumn>
+                </ODataGrid>
               </OFormControl>
             </div>
           </div>
@@ -128,10 +116,15 @@
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
+              @click="dsSharedWith.cancelChanges()"
             >
               {{ $t("Close") }}
             </button>
-            <button type="submit" class="btn btn-primary">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              :disabled="dsShoppingLists.current.isSaving"
+            >
               {{ vCreateNewRef ? $t("Create") : $t("Save") }}
             </button>
           </div>
@@ -142,376 +135,278 @@
 
     <div class="card">
       <div class="card-body">
-        <div class="d-flex align-items-center gap-3 mb-1">
-          <a
-            class="btn btn-secondary"
-            type="button"
-            href="/nt/aShoppingLists"
-          >
-            <i class="bi bi-arrow-left"></i>
-            {{ $t("Go back") }}
-          </a>
-          <h5 class="card-title">{{ dsShoppingLists.current.Name }}</h5>
-        </div>
-
+        <h5 class="card-title">
+          {{
+            $t(
+              `Your Shopping ${pluralize(dsShoppingLists.data.length, "List", "s")}`,
+            )
+          }}:
+        </h5>
+        
         <SearchInput debounce class="force-input-rounded" @onSearch="handleSearch" />
       </div>
-      <div class="accordion accordion-flush h-100 overflow-scroll">
-        <div
-          class="accordion-item"
-          v-for="(vValue, vKey, vIndex) in groupBy(
-            dsShoppingListsItems.data,
-            'ItemCategory',
-          )"
-          :id="`accordion-${vIndex}`"
-          :key="vIndex"
+      <ul class="list-group h-100 overflow-scroll list-group-flush">
+        <!-- List Item Start-->
+        <li
+          class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+          v-for="(vShoppingList, index) in dsShoppingLists.data"
+          :key="index"
+          :id="index"
         >
-          <h2 class="accordion-header" :id="`panel-${vKey}-header`">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              :data-bs-target="`#panel-${vKey}`"
-              aria-expanded="true"
-              :aria-controls="`panel-${vKey}`"
+          <div class="d-flex gap-2 flex-grow-1 justify-content-between">
+            <a
+              :href="`/nt/aShoppingLists/aShoppingListsGoods?ID=${vShoppingList.ID}`"
             >
-              <svg
-                class="rounded-circle border border-success checkmark me-2"
-                style="aspect-ratio: 1"
-                :class="[
-                  { 'opacity-100': vValue.every((vItem) => vItem.Checked) },
-                  'opacity-0',
-                ]"
-                viewBox="0 0 150 150"
-              >
-                <path d="M35,75 L65,105 L120,45" />
-              </svg>
-
-              <div
-                class="d-flex justify-content-between align-items-center w-100"
-              >
-                <span>{{ vKey }}</span>
-                <span class="badge bg-primary rounded-pill me-3">{{
-                  vValue.length
-                }}</span>
-              </div>
-            </button>
-          </h2>
-          <div
-            :id="`panel-${vKey}`"
-            class="accordion-collapse collapse show"
-            :aria-labelledby="`panel-${vKey}-header`"
-          >
-            <ul class="list-group list-group-flush">
-              <!-- List Item Start-->
-              <li
-                v-for="(vItem, vItemIndex) in vValue"
-                class="list-group-item d-flex justify-content-between gap-3 align-items-center"
-                :key="vItemIndex"
-              >
+              <h6 class="mb-0">{{ vShoppingList.Name }}</h6>
+              <div class="d-flex align-items-center">
+                <small class="text-muted me-1">{{ $t("Shared With") }}:</small>
                 <div
-                  class="form-check d-flex flex-row align-items-center gap-2 flex-grow-1"
-                >
-                  <input
-                    class="form-check-input p-3"
-                    type="checkbox"
-                    v-model="vItem.Checked"
-                    :id="`checkout-${vItem.Item_ID}`"
-                    @change="checkItem(vItem.index)"
+                  v-if="JSON.parse(vShoppingList.SharedWithJSON) !== null"
+                  class="profile-image-wrapper border border-white"
+                  v-for="(vPerson, vIndex) in JSON.parse(vShoppingList.SharedWithJSON)"
+                  :key="vIndex"
+                  :style="{ 'margin-left': vIndex === 0 ? 0 : '-8px' }"
+                  :title="vPerson.Name"
+                > 
+                  <PersonImage
+                    :personId="vPerson.Person_ID"
+                    class="profile-image"
                   />
+                </div>
+                <small v-else class="text-muted">{{ $t("None") }}</small>
+              </div>
+              <div
+                class="mt-1 text-muted d-flex align-items-center gap-1"
+                style="font-size: 0.75rem"
+              >
+                <div class="profile-image-wrapper border border-white">
+                  <PersonImage
+                    class="profile-image"
+                    :personId="vShoppingList.CreatedBy_ID"
+                  />
+                </div>
+                <span>
+                  {{ vShoppingList.CreatedByName }}
+                </span>
 
-                  <label :for="`checkout-${vItem.Item_ID}`">
-                    <img
-                      :src="vItem.ItemImage"
-                      class="img-fluid img-thumbnail"
-                      style="max-width: 50px"
-                    />
-                  </label>
-
-                  <label
-                    class="form-check-label d-flex flex-column"
-                    :for="`checkout-${vItem.Item_ID}`"
-                    :data-content="vItem.ItemName"
-                  >
-                    <span>{{ vItem.ItemName }}</span>
-                    <small class="text-muted"
-                      >{{ vItem.Amount }} {{ vItem.Unit }}</small
+                <span v-if="vShoppingList.ShoppingListItems > 0"> • </span>
+                <span
+                  v-if="
+                    vShoppingList.ShoppingListItems > 0 &&
+                    vShoppingList.ShoppingListItemsChecked === 0
+                  "
+                >
+                  {{
+                    pluralize(
+                      vShoppingList.ShoppingListItems,
+                      "Item",
+                      "s",
+                      true,
+                    )
+                  }}
+                </span>
+                <span
+                  v-if="
+                    vShoppingList.ShoppingListItems > 0 &&
+                    vShoppingList.ShoppingListItemsChecked > 0
+                  "
+                >
+                  {{
+                    pluralize(
+                      vShoppingList.ShoppingListItems -
+                        vShoppingList.ShoppingListItemsChecked,
+                      "Item",
+                      "s",
+                      true,
+                    )
+                  }}
+                  {{ $t("Remaining") }}
+                </span>
+              </div>
+            </a>
+            <div>
+              <small class="opacity-50 text-nowrap">{{
+                daysAgo(vShoppingList.Created)
+              }}</small>
+              <div class="dropdown d-flex">
+                <button
+                  class="btn ms-auto"
+                  type="button"
+                  id="Menu"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-three-dots"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="Menu">
+                  <li>
+                    <button class="dropdown-item" @click="openModal(index)">
+                      <i class="bi bi-pencil"></i>
+                      {{ $t("Edit") }}
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      @click="deleteShoppingList(vShoppingList)"
                     >
-                  </label>
-                </div>
-
-                <div class="dropdown">
-                  <button
-                    class="btn"
-                    type="button"
-                    :id="`menu-${vItem.Item_ID}`"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="bi bi-three-dots"></i>
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    :aria-labelledby="`menu-${vItem.Item_ID}`"
-                  >
-                    <li>
-                      <button
-                        class="dropdown-item"
-                        @click="openModal(vItem.index)"
-                      >
-                        <i class="bi bi-pencil"></i>
-                        {{ $t("Edit") }}
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" @click="deleteItem(vItem)">
-                        <i class="bi bi-trash"></i>
-                        {{ $t("Delete") }}
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <!-- List Item End-->
-            </ul>
+                      <i class="bi bi-trash"></i>
+                      {{ $t("Delete") }}
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <!-- List Item End-->
+      </ul>
     </div>
   </ORowContainer>
 
   <nav
     class="navbar py-0 fixed-bottom navbar-dark bg-dark d-flex flex-column border-top border-secondary"
   >
-    <div class="progress rounded-0 w-100">
-      <div
-        class="progress-bar bg-success"
-        role="progressbar"
-        :style="{ width: `${dsShoppingLists.current.PercentageCompleted}%` }"
-        :aria-valuenow="dsShoppingLists.current.PercentageCompleted"
-        aria-valuemin="0"
-        aria-valuemax="100"
+    <div class="row w-100 d-flex justify-content-center p-2">
+      <button
+        type="button"
+        class="btn btn-lg btn-primary rounded-circle"
+        style="width: 55px; height: 55px"
+        @click="openModal(-1)"
       >
-        {{ dsShoppingLists.current.PercentageCompleted }}%
-      </div>
-    </div>
-
-    <div class="row w-100">
-      <div class="col" />
-      <div class="col d-flex justify-content-center p-2">
-        <button
-          type="button"
-          class="btn btn-lg btn-primary rounded-circle"
-          style="width: 55px; height: 55px"
-          @click="openModal(-1)"
-        >
-          <i class="bi bi-plus-lg"></i>
-          <span class="visually-hidden">{{ $t("New") }}</span>
-        </button>
-      </div>
-      <div class="col d-flex justify-content-center p-2 align-items-center">
-        <p
-          class="text-light fw-bold mb-0"
-          v-if="dsShoppingLists.current.ShoppingListItems > 0"
-        >
-          {{
-            dsShoppingLists.current.ShoppingListItems -
-            dsShoppingLists.current.ShoppingListItemsChecked
-          }}
-          / {{ dsShoppingLists.current.ShoppingListItems }}
-          {{ $t("items left") }}
-        </p>
-      </div>
+        <i class="bi bi-plus-lg"></i>
+        <span class="visually-hidden">{{ $t("New") }}</span>
+      </button>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import { isMobile } from "mobile.utils.ts";
+import alert from "o365.controls.alert.ts";
+import { ref, onMounted, computed } from "vue";
 import { getDataObjectById } from "o365.vue.ts";
-import { getUserSession } from "o365.modules.configs.ts";
+import SearchInput from "o365.vue.components.SearchInput.vue";
+import PersonImage from "system.vue.components.PersonImage.vue";
+import OFormControl from "o365.vue.components.FormControl.vue";
+import OPersonsLookup from "o365.vue.components.PersonsLookup.vue";
+import ORowContainer from "o365.vue.components.RowContainer.vue";
+import ODataGrid from "o365.vue.components.DataGrid.vue";
 import ONavbar from "o365.vue.components.ONavbar.vue";
 import OModal from "o365.vue.components.Modal.vue";
-import alert from "o365.controls.alert.ts";
-import SearchInput from "o365.vue.components.SearchInput.vue";
-import OFormControl from "o365.vue.components.FormControl.vue";
-import ORowContainer from "o365.vue.components.RowContainer.vue";
-
-const vCreateNewRef = ref(false);
-const vModalRef = ref(null);
-
-const vItemNameRef = ref(null);
-const vItem_IDRef = ref(null);
-const vAmountRef = ref(1);
-const vUnitRef = ref("Piece");
-const vNewItemCheckRef = ref(false);
 
 const dsShoppingLists = getDataObjectById("dsShoppingLists");
-const dsShoppingListsItems = getDataObjectById("dsShoppingListsItems");
-const dsGoodsLkp = getDataObjectById("dsGoodsLkp");
+const dsSharedWith = getDataObjectById("dsSharedWith");
+
+const vModalRef = ref(null);
+const vCreateNewRef = ref(false);
 
 onMounted(() => {
-  const vShoppingList_ID = new URLSearchParams(window.location.search).get("ID");
-
-  dsShoppingLists.recordSource.whereClause = `ID = ${vShoppingList_ID}`;
   dsShoppingLists.load();
-
-  dsGoodsLkp.load();
 });
 
-const groupBy = (array, key) => {
-  return array.reduce((rv, x) => {
-    (rv[x[key]] = rv[x[key]] || []).push(x);
-    return rv;
-  }, {});
-};
+const computedPersonsLkpWhereClause = computed(() => {
+    const vCreatedBy_ID = dsShoppingLists.current.CreatedBy_ID;
+    const vSharedWith_IDs = JSON.parse(dsShoppingLists.current.SharedWithJSON).map(person => person.Person_ID);
 
-const alterAmount = (pAmount) =>
-  (vAmountRef.value = Math.min(
-    Math.max(vAmountRef.value + pAmount, 1),
-    1000000,
-  ));
-
-const handleSearch = (pSearchString) => {
-  const vSearchItem = dsShoppingListsItems.filterObject.getItem("SearchColumn");
-  if (vSearchItem) {
-    vSearchItem.selectedValue = pSearchString;
-    dsShoppingListsItems.filterObject.apply();
-  }
-};
-
-const checkItem = (pIndex) => {
-  dsShoppingListsItems.save();
-  dsShoppingLists.refreshRow();
-
-  const vAllItemsInCheckedCategory = Object.values(
-    groupBy(dsShoppingListsItems.data, "ItemCategory"),
-  ).find((vItems) => vItems.some((vItem) => vItem.index === pIndex));
-
-  if (vAllItemsInCheckedCategory.every((vItem) => vItem.Checked)) {
-    const vBSCollapse = new bootstrap.Collapse(
-      `#panel-${vAllItemsInCheckedCategory[0].ItemCategory}`,
-    ).hide();
-  }
-};
+    return `NOT (ID IN (${[vCreatedBy_ID, ...vSharedWith_IDs].join(", ")}))`;
+});
 
 const openModal = async (pIndex) => {
-  dsShoppingListsItems.setCurrentIndex(pIndex);
+  dsShoppingLists.setCurrentIndex(pIndex);
+  dsShoppingLists.refreshRow(pIndex);
 
   vCreateNewRef.value = Boolean(pIndex < 0);
-  vItem_IDRef.value = dsShoppingListsItems.current.Item_ID;
-  vItemNameRef.value = dsShoppingListsItems.current.ItemName;
-  vAmountRef.value = dsShoppingListsItems.current.Amount || 1;
-  vUnitRef.value = dsShoppingListsItems.current.Unit || "Piece";
 
   await vModalRef.value.show();
 };
 
 const resetModal = () => {
-  vItem_IDRef.value = null;
-  vItemNameRef.value = null;
-  vAmountRef.value = 1;
-  vUnitRef.value = "Piece";
-
-  vNewItemCheckRef.value = false;
+  dsSharedWith.save();
+  dsShoppingLists.save();
 };
 
-const saveShoppingListItem = async (pEvent) => {
-  if (vNewItemCheckRef.value) {
-    const vUserSession = getUserSession();
-
-    const vNewItem = dsGoodsLkp.createNew(
-      {
-        Name: vItemNameRef.value,
-        User_ID: vUserSession.personId,
-      },
-      true,
-    );
-    await dsGoodsLkp.save();
-
-    vItem_IDRef.value = vNewItem.ID;
-  }
+const saveShoppingList = async (pEvent) => {
+  const vFormData = Object.fromEntries(new FormData(pEvent.target));
 
   if (vCreateNewRef.value) {
     vCreateNewRef.value = false;
 
-    dsShoppingListsItems.createNew({
-      Item_ID: vItem_IDRef.value,
-      Unit: vUnitRef.value,
-      Amount: vAmountRef.value,
-    });
+    dsShoppingLists.createNew({ Name: vFormData.name });
 
-    alert($t("Shopping List Item Created"), "success", {
+    alert($t("New Shopping List Created"), "success", {
       autohide: true,
       delay: 3000,
     });
   } else {
-    dsShoppingListsItems.current.Item_ID = vItem_IDRef.value;
-    dsShoppingListsItems.current.ItemName = vItemNameRef.value;
-    dsShoppingListsItems.current.Amount = vAmountRef.value;
-    dsShoppingListsItems.current.Unit = vUnitRef.value;
-
-    alert($t("Shopping List Item Updated"), "success", {
-      autohide: true,
-      delay: 3000,
-    });
+    dsShoppingLists.current.Name = vFormData.name;
   }
 
-  dsShoppingListsItems
-    .save()
-    .then(() => {
-      dsShoppingListsItems.load();
-    })
-    .catch((pErr) => {
-      console.error(pErr);
-      alert(pErr);
-    });
-  vModalRef.value.hide();
+  dsShoppingLists.save().then(() => {
+    dsShoppingLists.load();
+    vModalRef.value.hide();
+  });
 };
 
-const deleteItem = (pItem) => {
-  if (confirm($t(`Do you want to remove "${pItem.ItemName}"?`))) {
-    dsShoppingListsItems.deleteItem(pItem);
-    dsShoppingListsItems.save();
+const deleteShoppingList = (pShoppingList) => {
+  if (
+    confirm(
+      $t(`Do you want to delete the Shopping List "${pShoppingList.Name}"?`),
+    )
+  ) {
+    dsShoppingLists.deleteItem(pShoppingList);
   }
+};
+
+// Util Functions
+const handleSearch = (pSearchString) => {
+  const vSearchItem = dsShoppingLists.filterObject.getItem("SearchColumn");
+  if (vSearchItem) {
+    vSearchItem.selectedValue = pSearchString;
+    dsShoppingLists.filterObject.apply();
+  }
+};
+
+const pluralize = (pCount, pNoun, pSuffix = "s", pIncludeNumber = false) =>
+  `${pIncludeNumber ? pCount : ""} ${pNoun}${pCount !== 1 ? pSuffix : ""}`;
+
+const daysAgo = (pDateString) => {
+  const vRtf = new Intl.RelativeTimeFormat("en", { style: "short" });
+
+  const vInputDate = new Date(pDateString);
+  const vCurrentDate = new Date();
+
+  const vDiffMs = vCurrentDate - vInputDate;
+
+  const vSecondsAgo = Math.floor(vDiffMs / 1000);
+  const vMinutesAgo = Math.floor(vSecondsAgo / 60);
+  const vHoursAgo = Math.floor(vMinutesAgo / 60);
+  const vDaysAgo = Math.floor(vHoursAgo / 24);
+
+  if (vSecondsAgo < 60) {
+    return $t("now");
+  }
+  if (vMinutesAgo < 60) {
+    return vRtf.format(-vMinutesAgo, "minute");
+  }
+  if (vHoursAgo < 24) {
+    return vRtf.format(-vHoursAgo, "hour");
+  }
+  return vRtf.format(-vDaysAgo, "day");
 };
 </script>
 
 <style>
-@keyframes drawCheck {
-  0% {
-    stroke-dashoffset: 100;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
+.profile-image-wrapper {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.checkmark {
-  width: 30px;
-  height: 30px;
-  stroke: rgb(25, 135, 84);
-  fill: none;
-  stroke-width: 8;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: drawCheck 1s ease forwards;
-}
-
-input[type="checkbox"]:checked ~ label::before {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-label::before {
-  position: absolute;
-  content: attr(data-content);
-  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-  text-decoration: line-through;
-  text-decoration-thickness: 2px;
-  text-decoration-color: black;
-  transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .force-input-rounded {
