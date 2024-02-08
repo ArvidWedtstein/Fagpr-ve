@@ -12,8 +12,6 @@
   </p>
 </div>
 
-
-      
 <details>
   <summary>
     <b>Table of Contents</b>
