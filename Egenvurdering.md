@@ -47,7 +47,7 @@
 ## Oppsummering
 
 Alt i alt så har det egentlig gått ganske greit.<br>
-Kunne ha utdypa meg mer her og der da.
+Kunne ha utdypa meg mer og gått mer inn i dypden på koss ting funke.<br>
 Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.<br>
 Kunne forklart mer når Vidar spurte om opphavsrett og inkludert bootstrap opphavsrett for eksempel.<br>
 Kunne ha gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
@@ -169,7 +169,7 @@ Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte li
 ## Ka kunne eg gjort annerledes eller bedre
 
 1. Ville lagt til veiledning for innlogging og registrering / gått over bruksanvisningen en siste gang, for å sjekka at eg ikkje har glemt ting
-2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
+2. Ville forklart mer i dypden, og ikke gått i fellå med å gå ut ifra at prøvenemnden kan appframe.
 3. Hadde eg visst at NT i training har så mangen problemer som an hadde nå (og hatt samme mengde erfaring som eg hadde med NT nå), så hadde eg nok gått for R4 Web istedenfor og bare brukt Ølen Betongs rammeverk.
 4. Hadde lest meg mer opp på kossen Omega 365 (Appframe) (NT) faktisk fungere.
 5. Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
