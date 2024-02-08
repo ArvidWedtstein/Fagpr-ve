@@ -39,7 +39,7 @@
       <a href="#avvik-i-løsning-i-forhold-til-plan-eller-oppdrag">Avvik i løsning i forhold til plan eller oppdrag</a>
     </li>
     <li>
-      <a href="#hva-jeg-ville-gjort-annerledes-eller-bedre">Hva jeg ville gjort annerledes eller bedre</a>
+      <a href="#ka-kunne-jeg-gjort-annerledes-eller-bedre">Hva jeg ville gjort annerledes eller bedre</a>
     </li>
   </ol>
 </details>
@@ -47,7 +47,8 @@
 ## Oppsummering
 
 Alt i alt så har ting egentlig gått ganske greit.<br>
-Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.
+Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.<br>
+Kunne lest meg mer opp på ting som sikkerhet. Alt i alt føler jeg meg tilfreds med min innsats og resultatene av fagprøven. Jeg klarte å demonstrere mine ferdigheter og kunnskaper på en tilfredsstillende måte, og jeg opprettholdt et høyt nivå av nøyaktighet og kvalitet i arbeidet mitt. Jeg tror at min grundige planlegging, evne til å håndtere utfordringer og samarbeidsevner var nøkkelfaktorer for min suksess under fagprøven.
 
 ### Egenevaluering av fremgangsmåte:
 
@@ -60,6 +61,8 @@ Vurderte å bruka R4 Web i starten sammen med npm pakkene til Ølen Betong og re
 men siden node pakkene til Ølen Betong var begrenset til .obet.no domenet og eg fekk beskjed om at det ikke var greit å laga fagprøven i kundens devmiljø så ble det uaktuelt.<br>
 Så andrevalget blei Omega 365 (NT), selv om jeg hadde begrenset kunnskap til det.<br>
 Dennis blei så å sei erstattning for det snippets, code search eller sitesetup ikke hadde av dokumentasjon (eksempel: disabling av filter på kolonne i datagrid komponenten).
+
+
 
 
 ## Utført arbeid under fagprøven
@@ -165,7 +168,7 @@ Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende 
   </li>
 </ol>
 
-## Hva jeg ville gjort annerledes eller bedre
+## Ka kunne eg gjort annerledes eller bedre
 
 1. Ville lagt til veiledning for innlogging og registrering
 2. Kunne ha fiksa noe bedre istedenfor den lookup / input felt toggle greiå.
