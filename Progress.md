@@ -50,7 +50,7 @@
     <sub><sup>(31.01)</sup></sub>
   </summary>
 
-  Laget [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md) for utviklingen
+  Laga [plan](https://github.com/ArvidWedtstein/Fagproove/blob/main/README.md).
 </details>
 
 <details open>
