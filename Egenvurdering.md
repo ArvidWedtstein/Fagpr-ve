@@ -48,7 +48,7 @@
 
 Alt i alt så har ting egentlig gått ganske greit.<br>
 Har vært litt utfordringer her og der, men klarte stortsett å løsa dei.<br>
-Kunne lest meg mer opp på ting som sikkerhet.
+Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
 
 ### Egenevaluering av fremgangsmåte:
 
@@ -63,8 +63,6 @@ Så andrevalget blei Omega 365 (NT), selv om jeg hadde begrenset kunnskap til de
 Dennis blei så å sei erstattning for det snippets, code search eller sitesetup ikke hadde av dokumentasjon (eksempel: disabling av filter på kolonne i datagrid komponenten).
 
 
-
-
 ## Utført arbeid under fagprøven
 
 Gjennomføringen av oppgaven gikk stort sett bra. <br>
@@ -72,7 +70,8 @@ Klarte stortsett å holda meg til tidsplanen, med unntak av når eg estimerte li
 
 [Progressjon under fagprøven / utført arbeid under fagprøven](https://github.com/ArvidWedtstein/Fagproove/blob/main/Progress.md)
 
-Kunne lest meg mer opp på sikkerhet, slik at jeg hadde kunne gi mer utfyllende svar under presentasjonen.
+Kunne ha vært mer våken under presentasjonen.<br>
+Vidar pekte ut at counteren i footeren ikke stemte. Da jeg sjekket opp dette i etterkant så stemte counteren.
 
 ### Utfordringer
 
